@@ -1,0 +1,705 @@
+nohup: ignoring input
+W0717 14:13:46.403000 242453 site-packages/torch/distributed/run.py:766] 
+W0717 14:13:46.403000 242453 site-packages/torch/distributed/run.py:766] *****************************************
+W0717 14:13:46.403000 242453 site-packages/torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0717 14:13:46.403000 242453 site-packages/torch/distributed/run.py:766] *****************************************
+2025-07-17 14:17:13.464277: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-17 14:17:13.464318: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-17 14:17:13.464328: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-17 14:17:13.464332: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-17 14:17:19.293959: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-07-17 14:17:19.293963: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-07-17 14:17:19.293980: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-07-17 14:17:19.293980: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-07-17 14:17:19.294009: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-07-17 14:17:19.294024: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-07-17 14:17:19.294023: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-07-17 14:17:19.294050: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-07-17 14:17:20.255831: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-07-17 14:17:20.255823: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-07-17 14:17:20.255840: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-07-17 14:17:20.255837: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-07-17 14:17:22.496142: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-17 14:17:22.496144: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-17 14:17:22.496148: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-17 14:17:22.496156: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-17 14:18:04.084808: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-07-17 14:18:04.084821: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-07-17 14:18:04.084821: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-07-17 14:18:04.084844: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2025-07-17 14:19:18,181] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-07-17 14:19:18,181] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-07-17 14:19:18,181] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-07-17 14:19:18,181] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/aiqihang.aqh/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/aiqihang.aqh/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/aiqihang.aqh/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/aiqihang.aqh/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-07-17 14:19:47,416] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-07-17 14:19:47,416] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-07-17 14:19:47,416] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-07-17 14:19:47,416] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-07-17 14:20:27,741] [INFO] [comm.py:676:init_distributed] cdb=None
+[2025-07-17 14:20:27,741] [INFO] [comm.py:707:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-07-17 14:20:27,741] [INFO] [comm.py:676:init_distributed] cdb=None
+[2025-07-17 14:20:27,742] [INFO] [comm.py:676:init_distributed] cdb=None
+[2025-07-17 14:20:27,742] [INFO] [comm.py:676:init_distributed] cdb=None
+dataset:  {'goal': '打开小红书，搜索manus，给第二个笔记点赞。', 'action': '{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [85, 537]}}', 'system': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'query': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n<image>\n', 'bbox': [52, 497, 125, 567], 'width': 720, 'height': 1280, 'resized_width': 448, 'resized_height': 840, 'img_list': ['/home/aiqihang.aqh/GUI-R1/new_images/69c5e6f1-36a8-478c-9f1c-36645761882a.png'], 'images': [<PIL.PngImagePlugin.PngImageFile image mode=RGBA size=720x1280 at 0x7F825D34EA90>], 'prompt': [{'content': [{'text': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]}
+using:  <class 'trainer.grpo_trainer_dapo.Qwen2VLDAPOTrainer'>
+dataset:  {'goal': '打开小红书，搜索manus，给第二个笔记点赞。', 'action': '{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [85, 537]}}', 'system': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'query': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n<image>\n', 'bbox': [52, 497, 125, 567], 'width': 720, 'height': 1280, 'resized_width': 448, 'resized_height': 840, 'img_list': ['/home/aiqihang.aqh/GUI-R1/new_images/69c5e6f1-36a8-478c-9f1c-36645761882a.png'], 'images': [<PIL.PngImagePlugin.PngImageFile image mode=RGBA size=720x1280 at 0x7F2561AD6BD0>], 'prompt': [{'content': [{'text': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]}
+using:  <class 'trainer.grpo_trainer_dapo.Qwen2VLDAPOTrainer'>
+dataset:  {'goal': '打开小红书，搜索manus，给第二个笔记点赞。', 'action': '{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [85, 537]}}', 'system': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'query': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n<image>\n', 'bbox': [52, 497, 125, 567], 'width': 720, 'height': 1280, 'resized_width': 448, 'resized_height': 840, 'img_list': ['/home/aiqihang.aqh/GUI-R1/new_images/69c5e6f1-36a8-478c-9f1c-36645761882a.png'], 'images': [<PIL.PngImagePlugin.PngImageFile image mode=RGBA size=720x1280 at 0x7F456381D3D0>], 'prompt': [{'content': [{'text': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]}
+using:  <class 'trainer.grpo_trainer_dapo.Qwen2VLDAPOTrainer'>
+dataset:  {'goal': '打开小红书，搜索manus，给第二个笔记点赞。', 'action': '{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [85, 537]}}', 'system': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'query': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n<image>\n', 'bbox': [52, 497, 125, 567], 'width': 720, 'height': 1280, 'resized_width': 448, 'resized_height': 840, 'img_list': ['/home/aiqihang.aqh/GUI-R1/new_images/69c5e6f1-36a8-478c-9f1c-36645761882a.png'], 'images': [<PIL.PngImagePlugin.PngImageFile image mode=RGBA size=720x1280 at 0x7F0EC1EC3550>], 'prompt': [{'content': [{'text': 'You are a mobile GUI agent. You are given a task and your action history, with the current screenshot and the previous state preceding the last action. You need to perform the next action to complete the task.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '分析任务和历史动作，给出下一步操作。\n在标签<think> </think>内输出思考过程。\n在标签<tool\\_call> </tool\\_call>内输出最终答案。\n\n用户任务: 打开小红书，搜索manus，给第二个笔记点赞。\n历史动作: \n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]}
+using:  <class 'trainer.grpo_trainer_dapo.Qwen2VLDAPOTrainer'>
+[2025-07-17 14:20:33,959] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:20:33,959] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:20:33,959] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:20:33,959] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2_5_VisionTransformerPretrainedModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2_5_VisionTransformerPretrainedModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2_5_VisionTransformerPretrainedModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2_5_VisionTransformerPretrainedModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+notebook-bbc9e8ecde2a-worker-0:242829:242829 [0] NCCL INFO Bootstrap: Using eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242829:242829 [0] NCCL INFO cudaDriverVersion 12040
+notebook-bbc9e8ecde2a-worker-0:242829:242829 [0] NCCL INFO NCCL version 2.26.2+cuda12.2
+notebook-bbc9e8ecde2a-worker-0:242829:242829 [0] NCCL INFO Comm config Blocking set to 1
+notebook-bbc9e8ecde2a-worker-0:242832:242832 [3] NCCL INFO cudaDriverVersion 12040
+notebook-bbc9e8ecde2a-worker-0:242832:242832 [3] NCCL INFO Bootstrap: Using eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242832:242832 [3] NCCL INFO NCCL version 2.26.2+cuda12.2
+notebook-bbc9e8ecde2a-worker-0:242832:242832 [3] NCCL INFO Comm config Blocking set to 1
+notebook-bbc9e8ecde2a-worker-0:242831:242831 [2] NCCL INFO cudaDriverVersion 12040
+notebook-bbc9e8ecde2a-worker-0:242831:242831 [2] NCCL INFO Bootstrap: Using eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242831:242831 [2] NCCL INFO NCCL version 2.26.2+cuda12.2
+notebook-bbc9e8ecde2a-worker-0:242830:242830 [1] NCCL INFO cudaDriverVersion 12040
+notebook-bbc9e8ecde2a-worker-0:242830:242830 [1] NCCL INFO Bootstrap: Using eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242830:242830 [1] NCCL INFO NCCL version 2.26.2+cuda12.2
+notebook-bbc9e8ecde2a-worker-0:242831:242831 [2] NCCL INFO Comm config Blocking set to 1
+notebook-bbc9e8ecde2a-worker-0:242830:242830 [1] NCCL INFO Comm config Blocking set to 1
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO NET/IB : Using [0]mlx5_23:1/RoCE [RO]; OOB eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO NET/IB : Using [0]mlx5_23:1/RoCE [RO]; OOB eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO NET/IB : Using [0]mlx5_23:1/RoCE [RO]; OOB eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO NET/IB : Using [0]mlx5_23:1/RoCE [RO]; OOB eth0:33.197.124.74<0>
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO Using network IB
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO Using network IB
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO Using network IB
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Using network IB
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO ncclCommInitRankConfig comm 0x55eac938d540 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 109000 commId 0xf59dadbc81cda4ca - Init START
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO ncclCommInitRankConfig comm 0x55dcb938a110 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 17f000 commId 0xf59dadbc81cda4ca - Init START
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO ncclCommInitRankConfig comm 0x55c433b8c110 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1c7000 commId 0xf59dadbc81cda4ca - Init START
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO RAS client listening socket at ::1<28028>
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO ncclCommInitRankConfig comm 0x55c4b578a7a0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1a3000 commId 0xf59dadbc81cda4ca - Init START
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO RAS client listening socket at ::1<28028>
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO RAS client listening socket at ::1<28028>
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO RAS client listening socket at ::1<28028>
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO Bootstrap timings total 0.002676 (create 0.000023, send 0.000080, recv 0.002226, ring 0.000087, delay 0.000000)
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO Bootstrap timings total 0.002553 (create 0.000020, send 0.000093, recv 0.000194, ring 0.000052, delay 0.000000)
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO Bootstrap timings total 0.000549 (create 0.000032, send 0.000094, recv 0.000119, ring 0.000047, delay 0.000000)
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Bootstrap timings total 0.002806 (create 0.000024, send 0.000085, recv 0.000387, ring 0.001977, delay 0.000000)
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO MNNVL busId 0x1a3000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO MNNVL busId 0x109000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO MNNVL busId 0x17f000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO MNNVL busId 0x1c7000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO Setting affinity for GPU 1 to 0ffffff3,ffcc0000,00000000,fffffff3,ffcc0000,00000000
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO NVLS multicast support is available on dev 1
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Setting affinity for GPU 0 to 0ffffff3,ffcc0000,00000000,fffffff3,ffcc0000,00000000
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO NVLS multicast support is available on dev 0
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO Setting affinity for GPU 3 to 0ffffff3,ffcc0000,00000000,fffffff3,ffcc0000,00000000
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO NVLS multicast support is available on dev 3
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO Setting affinity for GPU 2 to 0ffffff3,ffcc0000,00000000,fffffff3,ffcc0000,00000000
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO NVLS multicast support is available on dev 2
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO comm 0x55c4b578a7a0 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO comm 0x55eac938d540 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO comm 0x55c433b8c110 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO comm 0x55dcb938a110 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 00/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 01/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 02/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 03/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 04/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO P2P Chunksize set to 524288
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 05/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] -1/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] -1/-1/-1->3->2 [11] -1/-1/-1->3->2 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->2 [17] -1/-1/-1->3->2 [18] -1/-1/-1->3->2 [19] -1/-1/-1->3->2 [20] -1/-1/-1->3->2 [21] -1/-1/-1->3->2 [22] -1/-1/-1->3->2 [23] -1/-1/-1->3->2
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO P2P Chunksize set to 524288
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 06/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO P2P Chunksize set to 524288
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 07/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 08/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 09/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 10/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 11/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 12/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 13/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 14/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 15/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 16/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 17/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 18/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 19/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 20/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 21/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 22/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Channel 23/24 : 0 1 2 3
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO P2P Chunksize set to 524288
+notebook-bbc9e8ecde2a-worker-0:242832:249301 [3] NCCL INFO [Proxy Service] Device 3 CPU core 167
+notebook-bbc9e8ecde2a-worker-0:242832:249302 [3] NCCL INFO [Proxy Service UDS] Device 3 CPU core 168
+notebook-bbc9e8ecde2a-worker-0:242831:249303 [2] NCCL INFO [Proxy Service] Device 2 CPU core 56
+notebook-bbc9e8ecde2a-worker-0:242831:249304 [2] NCCL INFO [Proxy Service UDS] Device 2 CPU core 59
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Check P2P Type intraNodeP2pSupport 1 directMode 0
+notebook-bbc9e8ecde2a-worker-0:242829:249307 [0] NCCL INFO [Proxy Service] Device 0 CPU core 87
+notebook-bbc9e8ecde2a-worker-0:242829:249308 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 90
+notebook-bbc9e8ecde2a-worker-0:242830:249313 [1] NCCL INFO [Proxy Service] Device 1 CPU core 85
+notebook-bbc9e8ecde2a-worker-0:242830:249314 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 87
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO CC Off, workFifoBytes 1048576
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO ncclCommInitRankConfig comm 0x55eac938d540 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 109000 commId 0xf59dadbc81cda4ca - Init COMPLETE
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO ncclCommInitRankConfig comm 0x55dcb938a110 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 17f000 commId 0xf59dadbc81cda4ca - Init COMPLETE
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+notebook-bbc9e8ecde2a-worker-0:242829:249215 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 4 total 6.69 (kernels 2.04, alloc 2.49, bootstrap 0.00, allgathers 0.00, topo 1.52, graphs 0.01, connections 0.45, rest 0.19)
+notebook-bbc9e8ecde2a-worker-0:242830:249222 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 4 total 6.55 (kernels 1.89, alloc 2.49, bootstrap 0.00, allgathers 0.00, topo 1.52, graphs 0.01, connections 0.41, rest 0.22)
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO ncclCommInitRankConfig comm 0x55c4b578a7a0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1a3000 commId 0xf59dadbc81cda4ca - Init COMPLETE
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO ncclCommInitRankConfig comm 0x55c433b8c110 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1c7000 commId 0xf59dadbc81cda4ca - Init COMPLETE
+notebook-bbc9e8ecde2a-worker-0:242831:249221 [2] NCCL INFO Init timings - ncclCommInitRankConfig: rank 2 nranks 4 total 6.55 (kernels 1.86, alloc 2.52, bootstrap 0.00, allgathers 0.00, topo 1.52, graphs 0.01, connections 0.45, rest 0.18)
+notebook-bbc9e8ecde2a-worker-0:242832:249217 [3] NCCL INFO Init timings - ncclCommInitRankConfig: rank 3 nranks 4 total 6.56 (kernels 1.88, alloc 2.51, bootstrap 0.00, allgathers 0.00, topo 1.52, graphs 0.01, connections 0.46, rest 0.17)
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 13/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 16/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 19/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM
+notebook-bbc9e8ecde2a-worker-0:242830:249319 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+notebook-bbc9e8ecde2a-worker-0:242829:249318 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+notebook-bbc9e8ecde2a-worker-0:242832:249324 [3] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+notebook-bbc9e8ecde2a-worker-0:242831:249320 [2] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+[2025-07-17 14:20:46,675] [INFO] [partition_parameters.py:366:__exit__] finished initializing model - num_params = 825, num_elems = 4.07B
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [02:18<02:18, 138.93s/it]Loading checkpoint shards:  50%|█████     | 1/2 [02:18<02:18, 138.83s/it]Loading checkpoint shards:  50%|█████     | 1/2 [02:18<02:18, 138.68s/it]Loading checkpoint shards:  50%|█████     | 1/2 [02:21<02:21, 141.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 95.95s/it] Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 102.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 95.85s/it] Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 95.91s/it] Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 102.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [03:24<00:00, 102.35s/it]
+[2025-07-17 14:24:12,038] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:12,040] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:12,040] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+Loading checkpoint shards: 100%|██████████| 2/2 [03:28<00:00, 97.63s/it] Loading checkpoint shards: 100%|██████████| 2/2 [03:28<00:00, 104.26s/it]
+[2025-07-17 14:24:15,720] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][2025-07-17 14:24:16,201] [INFO] [partition_parameters.py:366:__exit__] finished initializing model - num_params = 1650, num_elems = 8.13B
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.85s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.85s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.85s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.83s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.05s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.33s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[2025-07-17 14:24:23,503] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:23,508] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:23,509] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:23,512] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.2, git-hash=unknown, git-branch=unknown
+[2025-07-17 14:24:23,512] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 4
+[2025-07-17 14:24:23,523] [INFO] [engine.py:1339:_configure_distributed_model] ********** distributed groups summary **********
+	 self.dp_world_size=4
+	 self.mp_world_size=1
+	 self.seq_dp_world_size=4
+	 self.sequence_parallel_size=1
+***********************************************
+[2025-07-17 14:24:23,525] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-07-17 14:24:23,527] [INFO] [logging.py:107:log_dist] [Rank 0] Creating ZeRO Offload
+[2025-07-17 14:24:23,994] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2025-07-17 14:24:23,995] [INFO] [utils.py:782:see_memory_usage] MA 3.51 GB         Max_MA 5.25 GB         CA 5.81 GB         Max_CA 6 GB 
+[2025-07-17 14:24:23,995] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 0.0 GB, percent = 0.0%
+Parameter Offload - Persistent parameters statistics: param_count = 408, numel = 755712
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[2025-07-17 14:24:24,525] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2025-07-17 14:24:24,526] [INFO] [utils.py:782:see_memory_usage] MA 3.51 GB         Max_MA 3.51 GB         CA 5.81 GB         Max_CA 6 GB 
+[2025-07-17 14:24:24,526] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 0.0 GB, percent = 0.0%
+[2025-07-17 14:24:24,528] [INFO] [config.py:954:print] DeepSpeedEngine configuration:
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   amp_enabled .................. False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   amp_params ................... False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   checkpoint_parallel_write_pipeline  False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   checkpoint_tag_validation_enabled  True
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   checkpoint_tag_validation_fail  False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f0e6ccf7cd0>
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   communication_data_type ...... None
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False keep_int_input_tensors=True keep_all_input_tensors=False
+[2025-07-17 14:24:24,528] [INFO] [config.py:958:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   curriculum_enabled_legacy .... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   curriculum_params_legacy ..... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   data_efficiency_enabled ...... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   dataloader_drop_last ......... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   disable_allgather ............ False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   dump_state ................... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_enabled ........... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_gas_boundary_resolution  1
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_layer_num ......... 0
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_max_iter .......... 100
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_stability ......... 1e-06
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_tol ............... 0.01
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   eigenvalue_verbose ........... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   elasticity_enabled ........... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   global_rank .................. 0
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   grad_accum_dtype ............. None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   gradient_accumulation_steps .. 4
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   gradient_clipping ............ 1.0
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   gradient_predivide_factor .... 1.0
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   graph_harvesting ............. False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   load_universal_checkpoint .... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   memory_breakdown ............. False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   mics_hierarchial_params_gather  False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   mics_shard_size .............. -1
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   optimizer_legacy_fusion ...... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   optimizer_name ............... None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   optimizer_params ............. None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   pld_enabled .................. False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   pld_params ................... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   prescale_gradients ........... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   scheduler_name ............... None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   scheduler_params ............. None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   seq_parallel_communication_data_type  torch.float32
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   sparse_attention ............. None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   sparse_gradients_enabled ..... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   steps_per_print .............. inf
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   timers_config ................ enabled=True synchronized=True
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   torch_autocast_dtype ......... None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   torch_autocast_enabled ....... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   torch_autocast_lower_precision_safe_modules  None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   train_batch_size ............. 16
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   train_micro_batch_size_per_gpu  1
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   use_data_before_expert_parallel_  False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   use_node_local_storage ....... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   wall_clock_breakdown ......... False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   weight_quantization_config ... None
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   world_size ................... 4
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   zero_allow_untested_optimizer  False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=True) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=True, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   zero_enabled ................. True
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   zero_force_ds_cpu_optimizer .. True
+[2025-07-17 14:24:24,529] [INFO] [config.py:958:print]   zero_optimization_stage ...... 3
+[2025-07-17 14:24:24,530] [INFO] [config.py:944:print_user_config]   json = {
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "initial_scale_power": 16, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 3, 
+        "offload_optimizer": {
+            "device": "none", 
+            "pin_memory": true
+        }, 
+        "offload_param": {
+            "device": "none", 
+            "pin_memory": true
+        }, 
+        "overlap_comm": true, 
+        "contiguous_gradients": true, 
+        "sub_group_size": 1.000000e+09, 
+        "reduce_bucket_size": "auto", 
+        "stage3_prefetch_bucket_size": "auto", 
+        "stage3_param_persistence_threshold": "auto", 
+        "stage3_max_live_parameters": 1.000000e+09, 
+        "stage3_max_reuse_distance": 1.000000e+09, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "gradient_accumulation_steps": 4, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": inf, 
+    "train_batch_size": 16, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "wall_clock_breakdown": false, 
+    "zero_optimization.reduce_bucket_size": 4.194304e+06, 
+    "zero_optimization.stage3_param_persistence_threshold": 2.048000e+04, 
+    "zero_optimization.stage3_prefetch_bucket_size": 3.774874e+06
+}
+Gradient accumulation steps mismatch: GradientAccumulationPlugin has 1, DeepSpeed config has 4. Using DeepSpeed's value.
+Parameter Offload - Persistent parameters statistics: param_count = 408, numel = 755712
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+  0%|          | 0/254 [00:00<?, ?it/s]/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[DEBUG] total_input_ids.shape: torch.Size([4, 5981])
+[DEBUG] total_input_ids.shape: torch.Size([4, 5981])
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[DEBUG] total_input_ids.shape: torch.Size([4, 11904])
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[DEBUG] total_input_ids.shape: torch.Size([4, 11940])
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[DEBUG] total_input_ids.shape: torch.Size([4, 6016])
+[DEBUG] total_input_ids.shape: torch.Size([4, 6023])
+[DEBUG] total_input_ids.shape: torch.Size([4, 11965])
+[DEBUG] total_input_ids.shape: torch.Size([4, 12017])
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/grpo_interactive.py", line 323, in <module>
+[rank3]:     main(script_args, training_args, model_args)
+[rank3]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/grpo_interactive.py", line 312, in main
+[rank3]:     trainer.train()
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+[rank3]:     return inner_training_loop(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+[rank3]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank3]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 3736, in training_step
+[rank3]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/trainer/grpo_trainer_dapo.py", line 446, in compute_loss
+[rank3]:     per_token_logps = self._get_per_token_logps(model, prompt_completion_ids, attention_mask, pixel_values, image_grid_thw)
+[rank3]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/trainer/grpo_trainer_dapo.py", line 351, in _get_per_token_logps
+[rank3]:     logits = model(input_ids, attention_mask=attention_mask, pixel_values=pixel_values, image_grid_thw=image_grid_thw).logits  # (B, L, V)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank3]:     ret_val = func(*args, **kwargs)
+[rank3]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2105, in forward
+[rank3]:     loss = self.module(*inputs, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank3]:     return inner()
+[rank3]:            ^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank3]:     result = forward_call(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 1842, in forward
+[rank3]:     logits = self.lm_head(hidden_states)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank3]:     return inner()
+[rank3]:            ^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank3]:     result = forward_call(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank3]:     return F.linear(input, self.weight, self.bias)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py", line 116, in zero3_linear_wrap
+[rank3]:     return LinearFunctionForZeroStage3.apply(input, weight)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+[rank3]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 510, in decorate_fwd
+[rank3]:     return fwd(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py", line 64, in forward
+[rank3]:     output = input.matmul(weight.t())
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 13.54 GiB. GPU 3 has a total capacity of 94.99 GiB of which 1.31 GiB is free. Process 167270 has 40.06 GiB memory in use. Process 206349 has 53.61 GiB memory in use. Of the allocated memory 34.34 GiB is allocated by PyTorch, and 4.49 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/grpo_interactive.py", line 323, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/grpo_interactive.py", line 312, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 2245, in train
+[rank0]:     return inner_training_loop(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/trainer.py", line 3736, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/trainer/grpo_trainer_dapo.py", line 446, in compute_loss
+[rank0]:     per_token_logps = self._get_per_token_logps(model, prompt_completion_ids, attention_mask, pixel_values, image_grid_thw)
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/trainer/grpo_trainer_dapo.py", line 351, in _get_per_token_logps
+[rank0]:     logits = model(input_ids, attention_mask=attention_mask, pixel_values=pixel_values, image_grid_thw=image_grid_thw).logits  # (B, L, V)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/engine.py", line 2105, in forward
+[rank0]:     loss = self.module(*inputs, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank0]:     return inner()
+[rank0]:            ^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 1842, in forward
+[rank0]:     logits = self.lm_head(hidden_states)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+[rank0]:     return inner()
+[rank0]:            ^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1805, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank0]:     return F.linear(input, self.weight, self.bias)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py", line 116, in zero3_linear_wrap
+[rank0]:     return LinearFunctionForZeroStage3.apply(input, weight)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+[rank0]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 510, in decorate_fwd
+[rank0]:     return fwd(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/deepspeed/runtime/zero/linear.py", line 64, in forward
+[rank0]:     output = input.matmul(weight.t())
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 13.60 GiB. GPU 0 has a total capacity of 94.99 GiB of which 1.12 GiB is free. Process 167264 has 40.12 GiB memory in use. Process 206346 has 53.73 GiB memory in use. Of the allocated memory 34.37 GiB is allocated by PyTorch, and 4.53 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  0%|          | 0/254 [00:57<?, ?it/s]
+notebook-bbc9e8ecde2a-worker-0:242830:249313 [1] NCCL INFO [Service thread] Connection closed by localRank 0
+notebook-bbc9e8ecde2a-worker-0:242831:249303 [2] NCCL INFO [Service thread] Connection closed by localRank 3
+W0717 14:25:36.805000 242453 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 242830 closing signal SIGTERM
+W0717 14:25:36.809000 242453 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 242831 closing signal SIGTERM
+W0717 14:25:36.813000 242453 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 242832 closing signal SIGTERM
+E0717 14:25:38.090000 242453 site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 242829) of binary: /home/aiqihang.aqh/.conda/envs/r1-v/bin/python3.11
+Traceback (most recent call last):
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 270, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/aiqihang.aqh/R1-V-Action/R1-V/src/r1-v/src/open_r1/grpo_interactive.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-07-17_14:25:36
+  host      : notebook-bbc9e8ecde2a-worker-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 242829)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

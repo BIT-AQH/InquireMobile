@@ -1,0 +1,1593 @@
+nohup: ignoring input
+[AMP DEBUG][Frontend.cpp:161][1752571416:835498]KUBERGPU_REMOTING_ENABLE: 0
+[AMP INFO][Frontend.cpp:359][1752571416:835756]Will allocate GPU resource for pid 138371
+[AMP DEBUG][Frontend.cpp:396][1752571416:884473]printsymbol 0 0
+[AMP DEBUG][Frontend.cpp:416][1752571416:884489]set MemAsyncCheck: 0 MemOversold: 0 MemUvm: 0 mMemUvmMax: 85899345920 mMemUvmScanEnable: 0 mGpuProfilingEnable: 0 mProfilingAllKernel: 0
+[AMP DEBUG][Frontend.cpp:417][1752571416:884509]mps 0 visibledevices 0,1,2,3,4,5,6,7
+[AMP DEBUG][Frontend.cpp:419][1752571416:884521]mLongKernelThreshold: 0
+[AMP DEBUG][Frontend.cpp:161][1752571614:36996]KUBERGPU_REMOTING_ENABLE: 0
+[AMP INFO][Frontend.cpp:359][1752571614:37229]Will allocate GPU resource for pid 140413
+[AMP DEBUG][Frontend.cpp:396][1752571614:161310]printsymbol 0 0
+[AMP DEBUG][Frontend.cpp:416][1752571614:161327]set MemAsyncCheck: 0 MemOversold: 0 MemUvm: 0 mMemUvmMax: 85899345920 mMemUvmScanEnable: 0 mGpuProfilingEnable: 0 mProfilingAllKernel: 0
+[AMP DEBUG][Frontend.cpp:417][1752571614:161346]mps 0 visibledevices 0,1,2,3,4,5,6,7
+[AMP DEBUG][Frontend.cpp:419][1752571614:161358]mLongKernelThreshold: 0
+[AMP INFO][Frontend.cpp:805][1752572025:407868]******************************************************
+[AMP INFO][Frontend.cpp:806][1752572025:407901]Start to allocate GPU resource for pid 140413, it may
+[AMP INFO][Frontend.cpp:807][1752572025:407911]take some time, please wait...
+[AMP INFO][Frontend.cpp:808][1752572025:407919]******************************************************
+[AMP INFO][Frontend.cpp:747][1752572027:908378]GPU resource obtained!
+[AMP INFO][Frontend.cpp:757][1752572027:908419]GPU device allocated is 5
+[AMP INFO][Frontend.cpp:797][1752572027:908431]Final allocation is 5
+2025-07-15 17:36:56.307005: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-15 17:36:56.349947: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-07-15 17:36:56.349983: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-07-15 17:36:56.351348: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-07-15 17:36:56.357737: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-15 17:37:55.216468: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2025-07-15 17:41:28,753] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/aiqihang.aqh/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-07-15 17:43:16,150] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[AMP DEBUG][Frontend.cpp:161][1752572603:766453]KUBERGPU_REMOTING_ENABLE: 0
+[AMP INFO][Frontend.cpp:359][1752572603:766711]Will allocate GPU resource for pid 159915
+[AMP DEBUG][Frontend.cpp:396][1752572603:854478]printsymbol 0 0
+[AMP DEBUG][Frontend.cpp:416][1752572603:854492]set MemAsyncCheck: 0 MemOversold: 0 MemUvm: 0 mMemUvmMax: 85899345920 mMemUvmScanEnable: 0 mGpuProfilingEnable: 0 mProfilingAllKernel: 0
+[AMP DEBUG][Frontend.cpp:417][1752572603:854516]mps 0 visibledevices 0,1,2,3,4,5,6,7
+[AMP DEBUG][Frontend.cpp:419][1752572603:854527]mLongKernelThreshold: 0
+[2025-07-15 17:45:13,275] [INFO] [comm.py:676:init_distributed] cdb=None
+[2025-07-15 17:45:13,276] [INFO] [comm.py:707:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 100 examples [00:01, 93.20 examples/s]Generating train split: 100 examples [00:01, 92.58 examples/s]
+Map:   0%|          | 0/100 [00:00<?, ? examples/s]Map:   1%|          | 1/100 [00:00<00:29,  3.37 examples/s]Map: 100%|██████████| 100/100 [00:00<00:00, 141.84 examples/s]
+Map:   0%|          | 0/100 [00:00<?, ? examples/s]Map:  10%|█         | 10/100 [00:03<00:31,  2.90 examples/s]Map:  20%|██        | 20/100 [00:04<00:17,  4.50 examples/s]Map:  30%|███       | 30/100 [00:06<00:12,  5.49 examples/s]Map:  40%|████      | 40/100 [00:07<00:09,  6.32 examples/s]Map:  50%|█████     | 50/100 [00:08<00:07,  6.69 examples/s]Map:  60%|██████    | 60/100 [00:10<00:05,  6.74 examples/s]Map:  70%|███████   | 70/100 [00:11<00:04,  7.35 examples/s]Map:  80%|████████  | 80/100 [00:12<00:02,  7.82 examples/s]Map:  90%|█████████ | 90/100 [00:13<00:01,  8.08 examples/s]Map: 100%|██████████| 100/100 [00:14<00:00,  8.38 examples/s]Map: 100%|██████████| 100/100 [00:14<00:00,  6.67 examples/s]
+dataset:  {'sample_id': '1920078154108055552_1746540231673', 'goal': '打开淘宝，进入“男装”页面，购买第一个商品', 'action': '{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [59, 204]}}', 'system': 'You are a mobile GUI agent.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n\n## 注意\n1. 请在 <think> </think> 标签内输出思考过程\n2. 请在 <tool_call> </tool_call> 标签内输出需要执行的动作\n\n用户任务:打开淘宝，进入“男装”页面，购买第一个商品', 'query': '\n当前屏幕截图:\n<image>', 'bbox': [108, 595, 318, 805], 'width': 1440, 'height': 3200, 'resized_width': 420, 'resized_height': 924, 'img_list': ['/home/aiqihang.aqh/GUI-R1/new_images/9c30417b-0c24-4d1c-89a2-55e6c418a451.png'], 'images': [<PIL.PngImagePlugin.PngImageFile image mode=P size=1440x3200 at 0x7FF17B5EB750>], 'prompt': [{'content': [{'text': 'You are a mobile GUI agent.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n\n## 注意\n1. 请在 <think> </think> 标签内输出思考过程\n2. 请在 <tool_call> </tool_call> 标签内输出需要执行的动作\n\n用户任务:打开淘宝，进入“男装”页面，购买第一个商品', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '\n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]}
+
+=== Data Example Prompt ===
+Raw prompt data: [{'content': [{'text': 'You are a mobile GUI agent.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{{"type": "function", "function": {{"name\\_for\\_human": "mobile\\_use", "name": \n"mobile\\_use", "description": "Use a touchscreen to interact with a mobile device."}}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool\\_call></tool\\_call> XML tags:\n\n<tool\\_call>\n{{"name": <function-name>, "arguments": <args-json-object>}}\n</tool\\_call>\n\n## 注意\n1. 请在 <think> </think> 标签内输出思考过程\n2. 请在 <tool_call> </tool_call> 标签内输出需要执行的动作\n\n用户任务:打开淘宝，进入“男装”页面，购买第一个商品', 'type': 'text'}], 'role': 'system'}, {'content': [{'text': '\n当前屏幕截图:\n', 'type': 'text'}, {'text': None, 'type': 'image'}], 'role': 'user'}]
+No tokenizer found in model_args, please check where you tokenize your data.
+==============================
+using:  <class 'trainer.grpo_trainer_dapo.Qwen2VLDAPOTrainer'>
+[2025-07-15 17:45:41,725] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 1
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2_5_VisionTransformerPretrainedModel is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+notebook-28753e7eded7-worker-0:140413:140413 [0] NCCL INFO Bootstrap: Using eth0:33.198.98.38<0>
+notebook-28753e7eded7-worker-0:140413:140413 [0] NCCL INFO cudaDriverVersion 12040
+notebook-28753e7eded7-worker-0:140413:140413 [0] NCCL INFO NCCL version 2.26.2+cuda12.2
+notebook-28753e7eded7-worker-0:140413:140413 [0] NCCL INFO Comm config Blocking set to 1
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal net plugin.
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO NET/IB : Using [0]mlx5_15:1/RoCE [RO]; OOB eth0:33.198.98.38<0>
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Using network IB
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO ncclCommInitRankConfig comm 0x56507657f540 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 17f000 commId 0x12e1aad770bf50bb - Init START
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO RAS client listening socket at ::1<28028>
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Bootstrap timings total 0.000527 (create 0.000024, send 0.000090, recv 0.000151, ring 0.000001, delay 0.000000)
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO MNNVL busId 0x17f000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO comm 0x56507657f540 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 00/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 01/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 02/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 03/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 04/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 05/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 06/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 07/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 08/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 09/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 10/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 11/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 12/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 13/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 14/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 15/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 16/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 17/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 18/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 19/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 20/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 21/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 22/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 23/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 24/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 25/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 26/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 27/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 28/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 29/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 30/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 31/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 32/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 33/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 34/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 35/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 36/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 37/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 38/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 39/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 40/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 41/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 42/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 43/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 44/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 45/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 46/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 47/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 48/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 49/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 50/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 51/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 52/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 53/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 54/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 55/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 56/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 57/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 58/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 59/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 60/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 61/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 62/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Channel 63/64 : 0
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [4
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO P2P Chunksize set to 524288
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Check P2P Type intraNodeP2pSupport 0 directMode 0
+notebook-28753e7eded7-worker-0:140413:162972 [0] NCCL INFO [Proxy Service] Device 0 CPU core 41
+notebook-28753e7eded7-worker-0:140413:162973 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 42
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO CC Off, workFifoBytes 1048576
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO ncclCommInitRankConfig comm 0x56507657f540 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 17f000 commId 0x12e1aad770bf50bb - Init COMPLETE
+notebook-28753e7eded7-worker-0:140413:162710 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 17.05 (kernels 4.28, alloc 8.24, bootstrap 0.00, allgathers 0.03, topo 0.93, graphs 0.00, connections 2.71, rest 0.87)
+[2025-07-15 17:46:10,653] [INFO] [partition_parameters.py:366:__exit__] finished initializing model - num_params = 825, num_elems = 4.07B
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][AMP INFO][Frontend.cpp:805][1752572814:992143]******************************************************
+[AMP INFO][Frontend.cpp:806][1752572814:992175]Start to allocate GPU resource for pid 159915, it may
+[AMP INFO][Frontend.cpp:807][1752572814:992185]take some time, please wait...
+[AMP INFO][Frontend.cpp:808][1752572814:992193]******************************************************
+[AMP INFO][Frontend.cpp:747][1752572817:492702]GPU resource obtained!
+[AMP INFO][Frontend.cpp:757][1752572817:492750]GPU device allocated is 5
+[AMP INFO][Frontend.cpp:797][1752572817:492762]Final allocation is 5
+Loading checkpoint shards:  50%|█████     | 1/2 [04:21<04:21, 261.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [08:34<00:00, 256.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [08:34<00:00, 257.31s/it]
+[2025-07-15 17:54:45,586] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 1
+[2025-07-15 17:54:49,971] [INFO] [partition_parameters.py:366:__exit__] finished initializing model - num_params = 1650, num_elems = 8.13B
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[2025-07-15 17:54:59,248] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.2, git-hash=unknown, git-branch=unknown
+[2025-07-15 17:54:59,248] [INFO] [config.py:684:__init__] Config mesh_device None world_size = 1
+[2025-07-15 17:54:59,260] [INFO] [engine.py:1339:_configure_distributed_model] ********** distributed groups summary **********
+	 self.dp_world_size=1
+	 self.mp_world_size=1
+	 self.seq_dp_world_size=1
+	 self.sequence_parallel_size=1
+***********************************************
+[2025-07-15 17:54:59,261] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-07-15 17:54:59,263] [INFO] [logging.py:107:log_dist] [Rank 0] Creating ZeRO Offload
+[2025-07-15 17:54:59,604] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2025-07-15 17:54:59,604] [INFO] [utils.py:782:see_memory_usage] MA 14.01 GB         Max_MA 15.75 GB         CA 15.97 GB         Max_CA 16 GB 
+[2025-07-15 17:54:59,604] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 0.0 GB, percent = 0.0%
+Parameter Offload - Persistent parameters statistics: param_count = 408, numel = 755712
+[2025-07-15 17:54:59,948] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2025-07-15 17:54:59,948] [INFO] [utils.py:782:see_memory_usage] MA 14.01 GB         Max_MA 14.01 GB         CA 15.97 GB         Max_CA 16 GB 
+[2025-07-15 17:54:59,948] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 0.0 GB, percent = 0.0%
+[2025-07-15 17:54:59,950] [INFO] [config.py:954:print] DeepSpeedEngine configuration:
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   amp_enabled .................. False
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   amp_params ................... False
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   checkpoint_parallel_write_pipeline  False
+[2025-07-15 17:54:59,950] [INFO] [config.py:958:print]   checkpoint_tag_validation_enabled  True
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   checkpoint_tag_validation_fail  False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7ff1403c35d0>
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   communication_data_type ...... None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False keep_int_input_tensors=True keep_all_input_tensors=False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   curriculum_enabled_legacy .... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   curriculum_params_legacy ..... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   data_efficiency_enabled ...... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   dataloader_drop_last ......... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   disable_allgather ............ False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   dump_state ................... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_enabled ........... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_gas_boundary_resolution  1
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_layer_num ......... 0
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_max_iter .......... 100
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_stability ......... 1e-06
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_tol ............... 0.01
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   eigenvalue_verbose ........... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   elasticity_enabled ........... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   global_rank .................. 0
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   grad_accum_dtype ............. None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   gradient_accumulation_steps .. 2
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   gradient_clipping ............ 1.0
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   gradient_predivide_factor .... 1.0
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   graph_harvesting ............. False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   load_universal_checkpoint .... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   memory_breakdown ............. False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   mics_hierarchial_params_gather  False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   mics_shard_size .............. -1
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   optimizer_legacy_fusion ...... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   optimizer_name ............... None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   optimizer_params ............. None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   pld_enabled .................. False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   pld_params ................... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   prescale_gradients ........... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   scheduler_name ............... None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   scheduler_params ............. None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   seq_parallel_communication_data_type  torch.float32
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   sparse_attention ............. None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   sparse_gradients_enabled ..... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   steps_per_print .............. inf
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   timers_config ................ enabled=True synchronized=True
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   torch_autocast_dtype ......... None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   torch_autocast_enabled ....... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   torch_autocast_lower_precision_safe_modules  None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   train_batch_size ............. 2
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   train_micro_batch_size_per_gpu  1
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   use_data_before_expert_parallel_  False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   use_node_local_storage ....... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   wall_clock_breakdown ......... False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   weight_quantization_config ... None
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   world_size ................... 1
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   zero_allow_untested_optimizer  False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=True) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=True, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   zero_enabled ................. True
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   zero_force_ds_cpu_optimizer .. True
+[2025-07-15 17:54:59,951] [INFO] [config.py:958:print]   zero_optimization_stage ...... 3
+[2025-07-15 17:54:59,952] [INFO] [config.py:944:print_user_config]   json = {
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "initial_scale_power": 16, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 3, 
+        "offload_optimizer": {
+            "device": "none", 
+            "pin_memory": true
+        }, 
+        "offload_param": {
+            "device": "none", 
+            "pin_memory": true
+        }, 
+        "overlap_comm": true, 
+        "contiguous_gradients": true, 
+        "sub_group_size": 1.000000e+09, 
+        "reduce_bucket_size": "auto", 
+        "stage3_prefetch_bucket_size": "auto", 
+        "stage3_param_persistence_threshold": "auto", 
+        "stage3_max_live_parameters": 1.000000e+09, 
+        "stage3_max_reuse_distance": 1.000000e+09, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "gradient_accumulation_steps": 2, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": inf, 
+    "train_batch_size": 2, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "wall_clock_breakdown": false, 
+    "zero_optimization.reduce_bucket_size": 4.194304e+06, 
+    "zero_optimization.stage3_param_persistence_threshold": 2.048000e+04, 
+    "zero_optimization.stage3_prefetch_bucket_size": 3.774874e+06
+}
+Train set size: 100
+Eval set size: 0
+Gradient accumulation steps mismatch: GradientAccumulationPlugin has 1, DeepSpeed config has 2. Using DeepSpeed's value.
+Parameter Offload - Persistent parameters statistics: param_count = 408, numel = 755712
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+  0%|          | 0/50 [00:00<?, ?it/s]/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[DEBUG] total_input_ids.shape: torch.Size([2, 705])
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[DEBUG] total_input_ids.shape: torch.Size([2, 794])
+[DEBUG] total_input_ids.shape: torch.Size([2, 794])
+notebook-28753e7eded7-worker-0:140413:174816 [0] NCCL INFO Comm config Blocking set to 1
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Using network IB
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO ncclCommInitRankConfig comm 0x7ff0641325c0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 17f000 commId 0xab465004509ec36f - Init START
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Bootstrap timings total 0.000330 (create 0.000021, send 0.000095, recv 0.000118, ring 0.000001, delay 0.000000)
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO MNNVL busId 0x17f000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO comm 0x7ff0641325c0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 00/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 01/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 02/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 03/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 04/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 05/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 06/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 07/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 08/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 09/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 10/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 11/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 12/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 13/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 14/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 15/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 16/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 17/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 18/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 19/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 20/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 21/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 22/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 23/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 24/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 25/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 26/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 27/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 28/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 29/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 30/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 31/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 32/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 33/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 34/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 35/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 36/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 37/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 38/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 39/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 40/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 41/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 42/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 43/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 44/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 45/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 46/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 47/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 48/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 49/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 50/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 51/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 52/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 53/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 54/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 55/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 56/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 57/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 58/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 59/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 60/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 61/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 62/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Channel 63/64 : 0
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [4
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO P2P Chunksize set to 524288
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Check P2P Type intraNodeP2pSupport 0 directMode 0
+notebook-28753e7eded7-worker-0:140413:174835 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 34
+notebook-28753e7eded7-worker-0:140413:174834 [0] NCCL INFO [Proxy Service] Device 0 CPU core 45
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO CC Off, workFifoBytes 1048576
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO ncclCommInitRankConfig comm 0x7ff0641325c0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 17f000 commId 0xab465004509ec36f - Init COMPLETE
+notebook-28753e7eded7-worker-0:140413:174825 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.40 (kernels 0.00, alloc 0.02, bootstrap 0.00, allgathers 0.02, topo 0.25, graphs 0.00, connections 0.12, rest 0.00)
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[DEBUG] total_input_ids.shape: torch.Size([2, 1304])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1434])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1434])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "type", "text": "大学转专业政策"}}
+正在输入搜索关键词
+
+<summary>
+1. 打开浏览器
+2. 输入并搜索“大学转专业政策”
+</summary>
+--------------------------------------------------
+format error--------------------------------------------------
+正在输入搜索关键词
+
+<summary>
+1. 打开浏览器
+2. 输入并搜索“大学转专业政策”
+</summary> None True
+--------------------------------------------------
+  2%|▏         | 1/50 [01:44<1:25:40, 104.90s/it]                                                 {'loss': -0.221, 'grad_norm': 7.205891410082207, 'learning_rate': 1e-06, 'completion_length': 82.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300619125366, 'kl': 0.0, 'epoch': 0.02}
+  2%|▏         | 1/50 [01:44<1:25:40, 104.90s/it]/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/torch/utils/checkpoint.py:86: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[DEBUG] total_input_ids.shape: torch.Size([2, 1411])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1508])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1508])
+format error--------------------------------------------------
+<think>
+我点击了支付方式中"微信支付"的选项，现在我需要确认我选择的支付方式，以便继续完成支付流程。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [93, 488]}}
+</tool_call>
+<summary>
+- 点击了"微信支付"的支付方式，并选择了该支付方式。
+</summary> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1360])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1534])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1534])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [364, 65]}}
+<summary>
+1. 输入了“大学转专业政策”并搜索
+2. 等待搜索引擎返回搜索结果
+3. 观察并等待搜索结果加载完成
+</summary>
+
+<think>
+Based on the current screenshot, the result search has been displayed, suggesting that the search has been executed successfully. My next step would be to either scroll to view more results or stop and initiate a screenshot task if necessary. However, since the task is to stop and end the process, and the search results are visible, I should assume that the screenshot has already been saved or will be saved soon. Thus, I need to proceed with stopping and ending the process.
+</think>
+
+<tool\_call>
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+</tool\_call>
+--------------------------------------------------
+format error--------------------------------------------------
+<summary>
+1. 输入了“大学转专业政策”并搜索
+2. 等待搜索引擎返回搜索结果
+3. 观察并等待搜索结果加载完成
+</summary>
+
+<think>
+Based on the current screenshot, the result search has been displayed, suggesting that the search has been executed successfully. My next step would be to either scroll to view more results or stop and initiate a screenshot task if necessary. However, since the task is to stop and end the process, and the search results are visible, I should assume that the screenshot has already been saved or will be saved soon. Thus, I need to proceed with stopping and ending the process.
+</think>
+
+<tool\_call>
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+</tool\_call> None True
+--------------------------------------------------
+  4%|▍         | 2/50 [02:08<45:38, 57.06s/it]                                                 {'loss': 0.1409, 'grad_norm': 17.91860136319144, 'learning_rate': 9.8e-07, 'completion_length': 112.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.7071067541837692, 'kl': 0.00081634521484375, 'epoch': 0.04}
+  4%|▍         | 2/50 [02:08<45:38, 57.06s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1389])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1557])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1557])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [221, 672], "coordinate2": [221, 224]}}
+<summary>
+1. 从手机桌面打开快手应用。
+2. 进入快手应用的搜索界面，搜索并输入“陈翔六点半 人生大事”。
+3. 查看搜索结果页面，点击相关搜索结果进入用户主页。
+4. 浏览用户主页，点击第一个视频播放按钮。
+5. 观看视频。
+6. 查看评论区。
+7. 选择并下载该视频。
+</summary>
+
+<think>
+I have navigated to the correct search results indicating that the related video might be found. Now, I need to select and download a video as per the user's request.
+</think>
+
+<action>
+"mobile_use", "arguments": {"action": "click", "coordinate": [170, 675]}}
+</action>
+--------------------------------------------------
+format error--------------------------------------------------
+<summary>
+1. 从手机桌面打开快手应用。
+2. 进入快手应用的搜索界面，搜索并输入“陈翔六点半 人生大事”。
+3. 查看搜索结果页面，点击相关搜索结果进入用户主页。
+4. 浏览用户主页，点击第一个视频播放按钮。
+5. 观看视频。
+6. 查看评论区。
+7. 选择并下载该视频。
+</summary>
+
+<think>
+I have navigated to the correct search results indicating that the related video might be found. Now, I need to select and download a video as per the user's request.
+</think>
+
+<action>
+"mobile_use", "arguments": {"action": "click", "coordinate": [170, 675]}}
+</action> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1298])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1367])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1367])
+format error--------------------------------------------------
+<think></think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [411, 633]}}
+</tool_call>
+
+<summary>
+1. 打开手机浏览器。
+2. 搜索“大学转专业政策”。
+</summary> None True
+--------------------------------------------------
+  6%|▌         | 3/50 [02:30<32:18, 41.24s/it]                                              {'loss': 0.0324, 'grad_norm': 14.960782976191698, 'learning_rate': 9.6e-07, 'completion_length': 112.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.7071067541837692, 'kl': 0.0010280609130859375, 'epoch': 0.06}
+  6%|▌         | 3/50 [02:30<32:18, 41.24s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1351])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1502])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1502])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1378])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1504])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1504])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [311, 676], "coordinate2": [311, 841]}}
+<think>
+My goal is to set an event starting at 15:00 on May 6, 2025. The current selected time is 19:30, so I need to change the hour to 15.
+</think>
+--------------------------------------------------
+format error--------------------------------------------------
+<think>
+My goal is to set an event starting at 15:00 on May 6, 2025. The current selected time is 19:30, so I need to change the hour to 15.
+</think> None True
+--------------------------------------------------
+  8%|▊         | 4/50 [02:54<26:24, 34.44s/it]                                              {'loss': -0.1333, 'grad_norm': 23.574643711451767, 'learning_rate': 9.399999999999999e-07, 'completion_length': 111.0, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.875, 'reward_std': 0.1767766922712326, 'kl': 0.001354217529296875, 'epoch': 0.08}
+  8%|▊         | 4/50 [02:54<26:24, 34.44s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1390])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1543])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1543])
+format error--------------------------------------------------
+<think>我需要打开我的草稿，找到最新的一条草稿，并在上面添加文字“呵呵”并发表。现在我看见一个草稿“我今天好饿”，它显示了“小红书”笔记页面。我应该点击这个草稿来打开它。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [65, 733]}}
+</tool_call>
+<summary>
+1. 打开了小红书应用并进入我的草稿页面。
+2. 找到了最新的一条草稿“我今天好饿”。
+3. 点击了这条草稿以编辑它。
+</summary> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 707])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"app_name": "bilibili"}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use",
+  "arguments": {
+    "application": "bilibili"
+  }
+}
+</tool_call> None True
+--------------------------------------------------
+ 10%|█         | 5/50 [03:14<21:45, 29.00s/it]                                              {'loss': 0.0342, 'grad_norm': 10.862439323792675, 'learning_rate': 9.2e-07, 'completion_length': 85.5, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.125, 'reward_std': 0.1767766922712326, 'kl': 0.001312255859375, 'epoch': 0.1}
+ 10%|█         | 5/50 [03:14<21:45, 29.00s/it][DEBUG] total_input_ids.shape: torch.Size([2, 702])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"activity": "open_app", "packageName": "com.taobao.pdd"}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1319])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1414])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1414])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "type", "text": "洗衣液"}}
+上一步操作: 输入了"洗衣液"进行搜索
+<summary>
+- 点击了拼多多应用
+- 搜索框中输入了"洗衣液"
+</summary>
+--------------------------------------------------
+format error--------------------------------------------------
+上一步操作: 输入了"洗衣液"进行搜索
+<summary>
+- 点击了拼多多应用
+- 搜索框中输入了"洗衣液"
+</summary> None True
+--------------------------------------------------
+ 12%|█▏        | 6/50 [03:31<18:15, 24.90s/it]                                              {'loss': -0.1477, 'grad_norm': 10.389765987839404, 'learning_rate': 9e-07, 'completion_length': 47.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.5303300619125366, 'kl': 0.0027494430541992188, 'epoch': 0.12}
+ 12%|█▏        | 6/50 [03:31<18:15, 24.90s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1293])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1393])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1393])
+format error--------------------------------------------------
+<think>我已经打开天气应用，现在需要查看当前城市是否有降雨天气。目前，当前天气显示为晴天，没有降雨信息，需进入详细天气预报查看。</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [189, 406]}}
+</tool_call>
+<summary>
+- 点击天气预报按钮查看详细天气信息
+</summary> None True
+--------------------------------------------------
+/home/aiqihang.aqh/.conda/envs/r1-v/lib/python3.11/site-packages/PIL/Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[DEBUG] total_input_ids.shape: torch.Size([2, 1296])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1529])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1529])
+format error--------------------------------------------------
+<think>可以看到当前正在查看的是城市的天气页面，但显示的地点不是“北京”。下一步应该确认用户需要查看哪个城市的天气信息。如果用户不确定他们的当前位置，他们可能需要手动导航到正确的地点或选择一个不同的城市。
+
+接下来的操作是尝试重新打开天气应用或者手动选择“北京”作为地点查看天气。如果应用没有显示为“北京”，则需要选择或输入正确的城市名称后进行切换。根据已知信息，“北京”似乎没有设置，可能需要寻找“北京”的图标或名字后再点打开。
+
+在这个过程前，我们应确认是否有明确位置设置后进行切换。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [143, 222]}}
+</tool_call>
+
+<think>重新点击天气应用，或尝试搜索正确的城市（北京）在天气应用中。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [157, 223]}}
+</tool_call> <re.Match object; span=(0, 520), match='<think>可以看到当前正在查看的是城市的天气页面，但显示的地点不是“北京”。下一步应该确认用户> False
+--------------------------------------------------
+ 14%|█▍        | 7/50 [03:57<18:11, 25.38s/it]                                              {'loss': 0.1758, 'grad_norm': 33.347312154042434, 'learning_rate': 8.799999999999999e-07, 'completion_length': 125.75, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.3535533845424652, 'kl': 0.00392913818359375, 'epoch': 0.14}
+ 14%|█▍        | 7/50 [03:57<18:11, 25.38s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1325])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1430])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1430])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1295])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1379])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1379])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [172, 97]}}
+<summary>
+用过的操作：
+- 打开淘宝
+- 开始淘宝应用
+
+下一步操作：
+```json
+{
+    "name": "mobile_use",
+    "arguments": {
+        "action": "click",
+        "coordinate": [152, 194]
+    }
+}
+```
+
+</summary>
+--------------------------------------------------
+format error--------------------------------------------------
+<summary>
+用过的操作：
+- 打开淘宝
+- 开始淘宝应用
+
+下一步操作：
+```json
+{
+    "name": "mobile_use",
+    "arguments": {
+        "action": "click",
+        "coordinate": [152, 194]
+    }
+}
+```
+
+</summary> None True
+--------------------------------------------------
+ 16%|█▌        | 8/50 [04:15<16:11, 23.13s/it]                                              {'loss': 0.0153, 'grad_norm': 40.991390176860335, 'learning_rate': 8.599999999999999e-07, 'completion_length': 84.25, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300768136978, 'kl': 0.0025787353515625, 'epoch': 0.16}
+ 16%|█▌        | 8/50 [04:15<16:11, 23.13s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1351])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1461])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1461])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [196, 756], "coordinate2": [196, 150]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 698])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1326])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1326])
+Exception--------------------------------------------------
+Extra data: line 2 column 1 (char 13)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [256, 202]}}
+"mobile_use"
+{"action": "swipe", "coordinate": [224, 657], "coordinate2": [193, 193] }
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [256, 205]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<think>To add an event to the calendar, I need to locate the calendar app. The calendar app is identifiable by its white circle with black numbers on it, indicating the upcoming days.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [224, 657], "coordinate2": [193, 193] }
+</tool_call>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [273, 694], "coordinate2": [175, 207] }
+</tool_call>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [344, 657], "coordinate2": [230, 153] }
+</tool_call>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [333, 755], "coordinate2": [291, 101] }
+</tool_call>
+<think>I need to navigate to the calendar to add an event. The Calendar icon is visible in my view.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [210, 322], "coordinate2": [210, 185] }
+</tool_call>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [263, 320], "coordinate2": [262, 121] }
+</tool_call>
+<think>I can now tap the calendar to open it.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [221, 734], "coordinate2": [217, 148] }
+</tool_call>
+<think>I see the calendar is open, which is the correct screen for adding events.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "click", "coordinate": [257, 214] }
+</tool_call>
+<think>I should click on an option to start editing the calendar event.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [221, 637], "coordinate2": [194, 119] }
+</tool_call>
+<think>I see an option to add an event. I need to tap on it to proceed.
+</think>
+<tool_call>
+"mobile_use"
+{"action": "swipe", "coordinate": [226, 672], "coordinate2": [207, 143] }
+</tool_call>
+<think>I am now seeing options within the calendar. I should finalize selecting an option, likely to add the event.
+</think> None False
+--------------------------------------------------
+ 18%|█▊        | 9/50 [05:07<21:56, 32.11s/it]                                              {'loss': 0.1915, 'grad_norm': 8.809958169152328, 'learning_rate': 8.399999999999999e-07, 'completion_length': 207.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.5303300768136978, 'kl': 0.00432586669921875, 'epoch': 0.18}
+ 18%|█▊        | 9/50 [05:07<21:56, 32.11s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1351])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1433])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1433])
+[DEBUG] total_input_ids.shape: torch.Size([2, 695])
+[DEBUG] total_input_ids.shape: torch.Size([2, 737])
+[DEBUG] total_input_ids.shape: torch.Size([2, 737])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"function": "mobile_use", "tool": "mobile_use", "args": {"app": "天气"}}
+}</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"target_app": "天气"}}
+</tool_call> None True
+--------------------------------------------------
+ 20%|██        | 10/50 [05:24<18:14, 27.36s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 8.199999999999999e-07, 'completion_length': 52.25, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.0019989013671875, 'epoch': 0.2}
+ 20%|██        | 10/50 [05:24<18:14, 27.36s/it][DEBUG] total_input_ids.shape: torch.Size([2, 700])
+[DEBUG] total_input_ids.shape: torch.Size([2, 746])
+[DEBUG] total_input_ids.shape: torch.Size([2, 746])
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use",
+  "arguments": {
+    "action": "click",
+    "coordinate": [57, 305]
+  }
+}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"platform": "Android", "action": "click", "coordinate": [94, 333]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1316])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1587])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1587])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [152, 106]}}
+</tool_call>
+
+<summary>
+- 检查并确认已打开飞猪旅行应用。
+- 在“搜索”栏中，点击“搜索”按钮。
+- 输入目的地“北京环球度假区”并点击“搜索”。
+- 筛选搜索结果，检查是否有北京环球度假区的相关选项。
+- 确认并点击搜索结果链接进入预订页面。
+- 加入景点到我的收藏。
+
+</summary>
+
+<think>
+上一步操作中，我在搜索栏中输入了“北京环球度假区”，但没有显示任何结果。这可能是因为没有正确填写或输入了正确的地点名称及关键字。因此，我需要再次检查搜索框，确保输入的信息准确且完整。
+</think>
+
+<view>
+- 进入搜索结果页面寻找北京环球度假区的正确选项。
+- 点击可能的北京环球度假区选项并确认预订。
+- 执行收藏操作以便添加到我的收藏。
+</view>
+
+<action>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [382, 162]}}
+</action> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<think>
+要搜索“北京环球度假区”，下一步应该是输入关键词进行搜索。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "type", "text": "飞猪-搜索"}}
+</tool_call>
+
+<summary>
+- 输入关键词“飞猪”
+</summary> None True
+--------------------------------------------------
+ 22%|██▏       | 11/50 [05:51<17:45, 27.32s/it]                                               {'loss': -0.0079, 'grad_norm': 5.91019705036051, 'learning_rate': 8e-07, 'completion_length': 107.25, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.0, 'rewards_zero_ratio/format_reward': 1.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.3535533845424652, 'kl': 0.0013887882232666016, 'epoch': 0.22}
+ 22%|██▏       | 11/50 [05:51<17:45, 27.32s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1340])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1461])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1461])
+format error--------------------------------------------------
+<think>
+根据任务需求，用户希望在哔哩哔哩进入番剧频道，并找到名为“名侦探柯南”的内容。目前在动画频道已经打开，下一步需要查找相关番剧。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [210, 770], "coordinate2": [210, 250]}}
+</tool_call>
+<summary>
+1. 切换到动画频道，在热门排行榜界面下操作
+</summary> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1298])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1400])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1400])
+format error--------------------------------------------------
+<think>在淘宝应用中，我发现小红点（消息通知）。点击进入消息页面，查看和处理待通知的消息内容。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [212, 898]}}
+</tool_call>
+
+<summary>
+我在淘宝应用中找到消息页面，以查看和消除小红点。
+</summary> None True
+--------------------------------------------------
+ 24%|██▍       | 12/50 [06:12<16:03, 25.37s/it]                                               {'loss': 0.0552, 'grad_norm': 18.522433139781754, 'learning_rate': 7.799999999999999e-07, 'completion_length': 103.25, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.7071067541837692, 'kl': 0.00342559814453125, 'epoch': 0.24}
+ 24%|██▍       | 12/50 [06:12<16:03, 25.37s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1390])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1526])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1526])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1408])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1479])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1479])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+
+--------------------------------------------------
+format error--------------------------------------------------
+ None True
+--------------------------------------------------
+ 26%|██▌       | 13/50 [06:31<14:30, 23.52s/it]                                               {'loss': -0.3437, 'grad_norm': 29.537251091055833, 'learning_rate': 7.599999999999999e-07, 'completion_length': 84.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300619125366, 'kl': 0.044567108154296875, 'epoch': 0.26}
+ 26%|██▌       | 13/50 [06:31<14:30, 23.52s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1293])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+<think>用户想查看当前城市是否有降雨，已经打开天气应用查看了当前日期的天气详情。下一步应查看天气具体情况，检查是否有降雨信息。查看降雨信息通常需要进入特定日期或展开更详细的天气预报。
+
+下一步操作应为点击日期或展开详细天气预报，查找降雨情况的详细预报信息。
+</think>
+<tool\_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [73, 699]}}
+</tool\_call>
+--------------------------------------------------
+format error--------------------------------------------------
+<think>用户想查看当前城市是否有降雨，已经打开天气应用查看了当前日期的天气详情。下一步应查看天气具体情况，检查是否有降雨信息。查看降雨信息通常需要进入特定日期或展开更详细的天气预报。
+
+下一步操作应为点击日期或展开详细天气预报，查找降雨情况的详细预报信息。
+</think>
+<tool\_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [73, 699]}}
+</tool\_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1536])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1621])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1621])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Back"}}
+</tool_call>
+
+<summary>
+- 用户已经完成了草稿中的正文编辑，输入了“呵呵”。
+- 现在用户已经准备好添加标题或进行其他操作。
+- 下一步是确认并发布草稿。
+</summary> None True
+--------------------------------------------------
+ 28%|██▊       | 14/50 [06:50<13:17, 22.16s/it]                                               {'loss': 0.0497, 'grad_norm': 21.01691584579753, 'learning_rate': 7.4e-07, 'completion_length': 89.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.7071067541837692, 'kl': 0.0149993896484375, 'epoch': 0.28}
+ 28%|██▊       | 14/50 [06:50<13:17, 22.16s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1556])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1875])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1875])
+format error--------------------------------------------------
+<think>
+用户之前在编辑草稿，现在选择了最新的草稿并添加了文本。现在用户已经在笔记编辑页面，但需要在返回到主页查看已发布内容中，所以我认为用户可能会选择浏览其他内容或者返回首页。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}
+</tool_call>
+<summary>
+1. 从主屏幕点击了小红书应用图标
+2. 小红书应用已经打开，并弹出了欢迎提示框，询问是否继续编辑图文笔记
+3. 进入到用户的个人主页，显示用户ID为rednote1137，页面展示了用户的笔记内容，包括一个标题为"本地草稿"的项目，显示有5篇笔记待发布
+4. 用户点击了本地草稿，进入草稿列表页面，显示了多条草稿笔记，包括标题为"Hello, rednote!"的笔记和"我今天好饿"的笔记
+5. 用户点击了列表中最新的草稿，进入到了编辑草稿的配图选择界面，显示了带有"Hello, rednote!"和"你好，小红书！"文字的图片
+6. 用户已点击"下一步"，进入到了笔记编辑页面，可以编辑标题、添加正文内容、添加话题标签等
+7. 在正文内容区域添加了文字"呵呵"
+8. 用户看到编辑成功并准备发布，选择发布了草稿
+</summary> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1303])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1415])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1415])
+ 30%|███       | 15/50 [07:24<14:58, 25.66s/it]                                               {'loss': 0.2909, 'grad_norm': 7.584572621528844, 'learning_rate': 7.2e-07, 'completion_length': 137.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.3535533845424652, 'kl': 0.022705078125, 'epoch': 0.3}
+ 30%|███       | 15/50 [07:24<14:58, 25.66s/it][DEBUG] total_input_ids.shape: torch.Size([2, 699])
+[DEBUG] total_input_ids.shape: torch.Size([2, 794])
+[DEBUG] total_input_ids.shape: torch.Size([2, 794])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [262, 204]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 700])
+[DEBUG] total_input_ids.shape: torch.Size([2, 759])
+[DEBUG] total_input_ids.shape: torch.Size([2, 759])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"type": "click", "coordinate": [355, 598]}}
+</tool_call>
+
+<think>我需要点击浏览器图标，以启动浏览器并进行网页搜索。</think> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [238, 595], "coordinate2": [230, 199]}}
+</tool_call> None True
+--------------------------------------------------
+ 32%|███▏      | 16/50 [07:44<13:31, 23.88s/it]                                               {'loss': -0.1477, 'grad_norm': 5.664473176732915, 'learning_rate': 7e-07, 'completion_length': 61.75, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.1767766922712326, 'kl': 0.0018157958984375, 'epoch': 0.32}
+ 32%|███▏      | 16/50 [07:44<13:31, 23.88s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1383])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1512])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1512])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1340])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1424])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1424])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [332, 480]}}
+<summary>
+1. 首先，打开了手机并进入了快手应用。
+2. 接着，点击了快手主界面上的搜索栏，准备进行搜索。
+</summary>
+
+<think>
+在快手主界面上搜索栏点击后，页面自动进入了一个广告页面，需要找到和快手直播相关的信息。因此，下一步操作应该是寻找搜索栏中的直播榜。
+</think>
+--------------------------------------------------
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [332, 480]}}
+<think>
+要查看直播间中的主播信息，首先需要找到直播榜。根据历史操作，我们已经进入了快手应用。当前页面显示的是搜索界面，我们需要找到直播榜。
+</think>
+--------------------------------------------------
+format error--------------------------------------------------
+<summary>
+1. 首先，打开了手机并进入了快手应用。
+2. 接着，点击了快手主界面上的搜索栏，准备进行搜索。
+</summary>
+
+<think>
+在快手主界面上搜索栏点击后，页面自动进入了一个广告页面，需要找到和快手直播相关的信息。因此，下一步操作应该是寻找搜索栏中的直播榜。
+</think> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<think>
+要查看直播间中的主播信息，首先需要找到直播榜。根据历史操作，我们已经进入了快手应用。当前页面显示的是搜索界面，我们需要找到直播榜。
+</think> None True
+--------------------------------------------------
+ 34%|███▍      | 17/50 [08:06<12:46, 23.23s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 6.800000000000001e-07, 'completion_length': 84.0, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.0091552734375, 'epoch': 0.34}
+ 34%|███▍      | 17/50 [08:06<12:46, 23.23s/it][DEBUG] total_input_ids.shape: torch.Size([2, 711])
+[DEBUG] total_input_ids.shape: torch.Size([2, 789])
+[DEBUG] total_input_ids.shape: torch.Size([2, 789])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [63, 402]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1322])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1400])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1400])
+ 36%|███▌      | 18/50 [08:26<11:51, 22.23s/it]                                               {'loss': 0.1219, 'grad_norm': 6.634255494828047, 'learning_rate': 6.6e-07, 'completion_length': 67.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.1767766922712326, 'kl': 0.00677490234375, 'epoch': 0.36}
+ 36%|███▌      | 18/50 [08:26<11:51, 22.23s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1429])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1529])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1529])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1297])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+format error--------------------------------------------------
+<summary>
+在第一步中，您点击了“淘”应用程序，进入了底部列表并发现了它是一个新的应用图标。您在应用商店中搜寻并选择了“淘宝”，这意味着您的下一步操作将是打开这个应用以便进行任务操作。
+</summary>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [65, 212]}}
+</tool_call>
+<think>
+根据屏幕截图，您已经进入了淘宝应用程序。下一步，我要将焦点转移到服装的购买页面。在当前的淘宝主界面，您不需要进行额外的操作，因为你已经进入了淘宝。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "terminate", "status": "success"}}
+</tool_call> <re.Match object; span=(0, 412), match='<summary>\n在第一步中，您点击了“淘”应用程序，进入了底部列表并发现了它是一个新的应用图> False
+--------------------------------------------------
+ 38%|███▊      | 19/50 [08:49<11:39, 22.57s/it]                                               {'loss': 0.1666, 'grad_norm': 59.61871267913833, 'learning_rate': 6.4e-07, 'completion_length': 100.5, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.1767766922712326, 'kl': 0.0185546875, 'epoch': 0.38}
+ 38%|███▊      | 19/50 [08:49<11:39, 22.57s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1292])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1390])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1390])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1411])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1564])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1564])
+ 40%|████      | 20/50 [09:11<11:15, 22.52s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 6.2e-07, 'completion_length': 115.75, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.0, 'kl': 0.004730224609375, 'epoch': 0.4}
+ 40%|████      | 20/50 [09:11<11:15, 22.52s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1348])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1362])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1489])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1489])
+ 42%|████▏     | 21/50 [09:34<10:50, 22.44s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 6e-07, 'completion_length': 112.75, 'rewards/accuracy_reward': 1.0, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 1.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.5, 'reward_std': 0.0, 'kl': 0.004364013671875, 'epoch': 0.42}
+ 42%|████▏     | 21/50 [09:34<10:50, 22.44s/it][DEBUG] total_input_ids.shape: torch.Size([2, 701])
+[DEBUG] total_input_ids.shape: torch.Size([2, 781])
+[DEBUG] total_input_ids.shape: torch.Size([2, 781])
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use",
+  "arguments": {}
+}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1299])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1367])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1367])
+ 44%|████▍     | 22/50 [09:49<09:33, 20.48s/it]                                               {'loss': -0.1904, 'grad_norm': 13.69770936965296, 'learning_rate': 5.8e-07, 'completion_length': 59.0, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300619125366, 'kl': 0.01995849609375, 'epoch': 0.44}
+ 44%|████▍     | 22/50 [09:49<09:33, 20.48s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1353])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1416])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1416])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1346])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1464])
+ 46%|████▌     | 23/50 [10:07<08:50, 19.64s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5.6e-07, 'completion_length': 78.5, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'kl': 0.011077880859375, 'epoch': 0.46}
+ 46%|████▌     | 23/50 [10:07<08:50, 19.64s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1332])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1405])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1405])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [372, 61]}}
+
+--------------------------------------------------
+format error--------------------------------------------------
+ None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1365])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1472])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1472])
+ 48%|████▊     | 24/50 [10:24<08:11, 18.90s/it]                                               {'loss': -0.3972, 'grad_norm': 40.82115455463103, 'learning_rate': 5.4e-07, 'completion_length': 65.0, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.875, 'reward_std': 0.8838834464550018, 'kl': 1.4390029907226562, 'epoch': 0.48}
+ 48%|████▊     | 24/50 [10:24<08:11, 18.90s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1387])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1538])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1538])
+[DEBUG] total_input_ids.shape: torch.Size([2, 698])
+[DEBUG] total_input_ids.shape: torch.Size([2, 752])
+[DEBUG] total_input_ids.shape: torch.Size([2, 752])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "open", "text": "淘宝"}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "swipe", "coordinate": [315, 728], "coordinate2": [220, 296]}}
+</tool_call> None True
+--------------------------------------------------
+ 50%|█████     | 25/50 [10:47<08:24, 20.17s/it]                                               {'loss': 0.0951, 'grad_norm': 6.745129065843588, 'learning_rate': 5.2e-07, 'completion_length': 80.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.3535533845424652, 'kl': 0.003330230712890625, 'epoch': 0.5}
+ 50%|█████     | 25/50 [10:47<08:24, 20.17s/it][DEBUG] total_input_ids.shape: torch.Size([2, 698])
+[DEBUG] total_input_ids.shape: torch.Size([2, 753])
+[DEBUG] total_input_ids.shape: torch.Size([2, 753])
+format error--------------------------------------------------
+<tool_call>
+{
+"name": "mobile_use",
+"arguments": {
+"action": "swipe",
+"coordinate": [224, 742], "coordinate2": [221, 63]
+}
+}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"click": [163, 232]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1446])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1531])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1531])
+ 52%|█████▏    | 26/50 [11:07<07:56, 19.87s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-07, 'completion_length': 63.5, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.027923583984375, 'epoch': 0.52}
+ 52%|█████▏    | 26/50 [11:07<07:56, 19.87s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1330])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1426])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1426])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1296])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1384])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1384])
+ 54%|█████▍    | 27/50 [11:24<07:19, 19.13s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 4.8e-07, 'completion_length': 84.25, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'kl': 0.009368896484375, 'epoch': 0.54}
+ 54%|█████▍    | 27/50 [11:24<07:19, 19.13s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1416])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1532])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1532])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1362])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1559])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1559])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [102, 296]}}
+</tool_call> None True
+--------------------------------------------------
+ 56%|█████▌    | 28/50 [11:50<07:45, 21.17s/it]                                               {'loss': -0.2646, 'grad_norm': 15.95125955206869, 'learning_rate': 4.6e-07, 'completion_length': 112.75, 'rewards/accuracy_reward': 0.75, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.125, 'reward_std': 0.5303300768136978, 'kl': 0.00714111328125, 'epoch': 0.56}
+ 56%|█████▌    | 28/50 [11:50<07:45, 21.17s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1326])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1402])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1402])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1291])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1439])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1439])
+ 58%|█████▊    | 29/50 [12:11<07:21, 21.02s/it]                                               {'loss': -0.0387, 'grad_norm': 16.56778756121486, 'learning_rate': 4.3999999999999997e-07, 'completion_length': 90.5, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.3535533845424652, 'kl': 0.006195068359375, 'epoch': 0.58}
+ 58%|█████▊    | 29/50 [12:11<07:21, 21.02s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1515])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1515])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1297])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1389])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1389])
+ 60%|██████    | 30/50 [12:30<06:53, 20.69s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 4.1999999999999995e-07, 'completion_length': 88.25, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.0, 'kl': 0.0093994140625, 'epoch': 0.6}
+ 60%|██████    | 30/50 [12:30<06:53, 20.69s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1304])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1398])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1398])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1356])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1518])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1518])
+format error--------------------------------------------------
+<thinking>
+为了完成搜索北京环球度假区，已经到达了搜索结果页面。下一步需要找到特定相关页面并点击进入。
+</thinkin>  
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [155, 566]}}
+</tool_call> None True
+--------------------------------------------------
+ 62%|██████▏   | 31/50 [12:53<06:43, 21.25s/it]                                               {'loss': 0.1359, 'grad_norm': 10.336843242558878, 'learning_rate': 4e-07, 'completion_length': 99.5, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.1767766922712326, 'kl': 0.007171630859375, 'epoch': 0.62}
+ 62%|██████▏   | 31/50 [12:53<06:43, 21.25s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1426])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1523])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1523])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1299])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1365])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1365])
+ 64%|██████▍   | 32/50 [13:09<05:56, 19.79s/it]                                               {'loss': 0.0233, 'grad_norm': 11.933313387058998, 'learning_rate': 3.7999999999999996e-07, 'completion_length': 77.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.3535533845424652, 'kl': 0.00732421875, 'epoch': 0.64}
+ 64%|██████▍   | 32/50 [13:09<05:56, 19.79s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1315])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "type", "text": "家居清洁"}}
+
+--------------------------------------------------
+format error--------------------------------------------------
+ None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1518])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1749])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1749])
+ 66%|██████▌   | 33/50 [13:36<06:12, 21.91s/it]                                               {'loss': -0.1983, 'grad_norm': 132.52925262732288, 'learning_rate': 3.6e-07, 'completion_length': 104.5, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300768136978, 'kl': 1.66204833984375, 'epoch': 0.66}
+ 66%|██████▌   | 33/50 [13:36<06:12, 21.91s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1301])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1405])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1405])
+format error--------------------------------------------------
+<think>
+从当前屏幕截图来看，飞猪应用并没有被完全打开，提示栏下方没有显示飞猪的界面。需要进一步操作来进入飞猪的应用界面。
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "system_button", "button": "Home"}}
+</tool_call>
+<summary>
+从主屏幕进入飞猪应用
+</summary> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1361])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1433])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1433])
+ 68%|██████▊   | 34/50 [13:55<05:33, 20.83s/it]                                               {'loss': -0.026, 'grad_norm': 20.13919758542315, 'learning_rate': 3.4000000000000003e-07, 'completion_length': 82.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.625, 'reward_std': 0.5303300768136978, 'kl': 0.009033203125, 'epoch': 0.68}
+ 68%|██████▊   | 34/50 [13:55<05:33, 20.83s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1437])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1543])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1543])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1316])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1387])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1387])
+ 70%|███████   | 35/50 [14:13<05:01, 20.08s/it]                                               {'loss': -0.0356, 'grad_norm': 6.469030553562646, 'learning_rate': 3.2e-07, 'completion_length': 80.5, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.3535533845424652, 'kl': 0.00628662109375, 'epoch': 0.7}
+ 70%|███████   | 35/50 [14:13<05:01, 20.08s/it][DEBUG] total_input_ids.shape: torch.Size([2, 693])
+[DEBUG] total_input_ids.shape: torch.Size([2, 776])
+[DEBUG] total_input_ids.shape: torch.Size([2, 776])
+Exception--------------------------------------------------
+Extra data: line 1 column 7 (char 6)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [158, 206]}}
+"name": "mobile_use",
+"arguments": {
+  "type": "swipe",
+  "coordinate": [221, 598],
+  "coordinate2": [221, 203]
+}
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+"name": "mobile_use",
+"arguments": {
+  "type": "swipe",
+  "coordinate": [221, 598],
+  "coordinate2": [221, 203]
+}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1332])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1415])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1415])
+ 72%|███████▏  | 36/50 [14:30<04:28, 19.15s/it]                                               {'loss': -0.0656, 'grad_norm': 11.473189905696675, 'learning_rate': 3e-07, 'completion_length': 69.5, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.1767766922712326, 'kl': 0.0078582763671875, 'epoch': 0.72}
+ 72%|███████▏  | 36/50 [14:30<04:28, 19.15s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1367])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1457])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1457])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1475])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1550])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1550])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [90, 760]}}
+</tool_call> None True
+--------------------------------------------------
+ 74%|███████▍  | 37/50 [14:47<04:02, 18.68s/it]                                               {'loss': -0.1675, 'grad_norm': 18.873629863655527, 'learning_rate': 2.8e-07, 'completion_length': 67.5, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.875, 'reward_std': 0.8838834464550018, 'kl': 0.019775390625, 'epoch': 0.74}
+ 74%|███████▍  | 37/50 [14:47<04:02, 18.68s/it][DEBUG] total_input_ids.shape: torch.Size([2, 701])
+[DEBUG] total_input_ids.shape: torch.Size([2, 740])
+[DEBUG] total_input_ids.shape: torch.Size([2, 740])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [256, 509]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"click": "39"}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 703])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [253, 323]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "open_app", "text": "飞猪"}}
+</tool_call> None True
+--------------------------------------------------
+ 76%|███████▌  | 38/50 [15:00<03:21, 16.81s/it]                                               {'loss': -0.1002, 'grad_norm': 40.08870909359946, 'learning_rate': 2.6e-07, 'completion_length': 34.25, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.0, 'rewards_zero_ratio/format_reward': 1.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.7071067690849304, 'kl': 0.0008392333984375, 'epoch': 0.76}
+ 76%|███████▌  | 38/50 [15:00<03:21, 16.81s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1387])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1508])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1508])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1304])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1369])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1369])
+format error--------------------------------------------------
+<summary>
+点击“哔哩哔哩”应用图标进入主界面。
+</summary>
+
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [204, 120]}}
+</tool_call> None True
+--------------------------------------------------
+ 78%|███████▊  | 39/50 [15:19<03:12, 17.53s/it]                                               {'loss': 0.0201, 'grad_norm': 10.931232432532417, 'learning_rate': 2.4e-07, 'completion_length': 75.25, 'rewards/accuracy_reward': 0.75, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.125, 'reward_std': 0.1767766922712326, 'kl': 0.0125732421875, 'epoch': 0.78}
+ 78%|███████▊  | 39/50 [15:19<03:12, 17.53s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1333])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1524])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1524])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1378])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1462])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1462])
+ 80%|████████  | 40/50 [15:42<03:12, 19.24s/it]                                               {'loss': 0.0647, 'grad_norm': 18.594363958324944, 'learning_rate': 2.1999999999999998e-07, 'completion_length': 101.25, 'rewards/accuracy_reward': 0.75, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 1.25, 'reward_std': 0.3535533845424652, 'kl': 0.01458740234375, 'epoch': 0.8}
+ 80%|████████  | 40/50 [15:42<03:12, 19.24s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1315])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1411])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1411])
+[DEBUG] total_input_ids.shape: torch.Size([2, 703])
+[DEBUG] total_input_ids.shape: torch.Size([2, 736])
+[DEBUG] total_input_ids.shape: torch.Size([2, 736])
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use",
+  "arguments": {
+    "screen": "快手"
+  }
+}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"app_name": "快手"}}
+</tool_call> None True
+--------------------------------------------------
+ 82%|████████▏ | 41/50 [15:56<02:38, 17.61s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 2e-07, 'completion_length': 61.0, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.02264404296875, 'epoch': 0.82}
+ 82%|████████▏ | 41/50 [15:56<02:38, 17.61s/it][DEBUG] total_input_ids.shape: torch.Size([2, 695])
+[DEBUG] total_input_ids.shape: torch.Size([2, 734])
+[DEBUG] total_input_ids.shape: torch.Size([2, 734])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [168, 215]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [159, 217]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1303])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "type", "text": "旅行背包"}}
+<think>
+在历史搜索中，我可以看到搜索框里直接记录了“降噪式蓝牙耳机”。这意味着我之前搜索过类似关键词。我的目标是查看旅行背包的商品，因此我需要调整搜索框以搜索“旅行背包”。
+</think>
+--------------------------------------------------
+format error--------------------------------------------------
+<think>
+在历史搜索中，我可以看到搜索框里直接记录了“降噪式蓝牙耳机”。这意味着我之前搜索过类似关键词。我的目标是查看旅行背包的商品，因此我需要调整搜索框以搜索“旅行背包”。
+</think> None True
+--------------------------------------------------
+ 84%|████████▍ | 42/50 [16:11<02:14, 16.84s/it]                                               {'loss': -0.1045, 'grad_norm': 12.418908908826273, 'learning_rate': 1.8e-07, 'completion_length': 59.25, 'rewards/accuracy_reward': 0.75, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.5, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.875, 'reward_std': 0.5303300619125366, 'kl': 0.013530731201171875, 'epoch': 0.84}
+ 84%|████████▍ | 42/50 [16:11<02:14, 16.84s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1401])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1525])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1525])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1297])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1371])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1371])
+format error--------------------------------------------------
+<summary>
+1. 打开手机设置，确保设置中有相关的选项控制自动小窗播放。
+</summary>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [304, 76]}}
+</tool_call> None True
+--------------------------------------------------
+ 86%|████████▌ | 43/50 [16:31<02:03, 17.66s/it]                                               {'loss': -0.0284, 'grad_norm': 15.37803975494477, 'learning_rate': 1.6e-07, 'completion_length': 84.5, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.375, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.1767766922712326, 'kl': 0.00445556640625, 'epoch': 0.86}
+ 86%|████████▌ | 43/50 [16:31<02:03, 17.66s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1297])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1410])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1410])
+format error--------------------------------------------------
+<thinking>
+My goal is to open the Taobao application and navigate to the homepage, then enter the '家居清洁' category and select a product to purchase. Since I'm in the Taobao homepage, I need to access the search or homepage menu to get to the '家居清洁' category.
+</think>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [43, 212]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1364])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1506])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1506])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [69, 424]}}
+</tool_call>
+
+<think>
+下一步我需要选择开始时间。点击“开始时间”选项来设置会议的时间。
+</think>
+
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [66, 422]}}
+</tool_call>
+
+<summary>
+1. 从日历应用进入创建日程页面
+2. 输入事件标题“下午三点开会”
+3. 点击“开始时间”，选择下午三点
+</summary> None False
+--------------------------------------------------
+ 88%|████████▊ | 44/50 [16:54<01:55, 19.30s/it]                                               {'loss': -0.1381, 'grad_norm': 14.897412422156972, 'learning_rate': 1.4e-07, 'completion_length': 106.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.3535533845424652, 'kl': 0.017059326171875, 'epoch': 0.88}
+ 88%|████████▊ | 44/50 [16:54<01:55, 19.30s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1322])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1419])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1419])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1308])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1406])
+ 90%|█████████ | 45/50 [17:14<01:37, 19.48s/it]                                               {'loss': 0.0254, 'grad_norm': 43.72855928030032, 'learning_rate': 1.2e-07, 'completion_length': 89.5, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.5, 'rewards_zero_ratio/format_reward': 0.0, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.3535533845424652, 'kl': 0.009613037109375, 'epoch': 0.9}
+ 90%|█████████ | 45/50 [17:14<01:37, 19.48s/it][DEBUG] total_input_ids.shape: torch.Size([2, 707])
+[DEBUG] total_input_ids.shape: torch.Size([2, 745])
+[DEBUG] total_input_ids.shape: torch.Size([2, 745])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [58, 307]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "open_app", "text": "哔哩哔哩"}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1350])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1438])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1438])
+ 92%|█████████▏| 46/50 [17:31<01:15, 18.79s/it]                                               {'loss': -0.0336, 'grad_norm': 12.450156091784445, 'learning_rate': 1e-07, 'completion_length': 60.0, 'rewards/accuracy_reward': 0.5, 'rewards_zero_ratio/accuracy_reward': 0.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.75, 'reward_std': 0.7071067690849304, 'kl': 0.0054931640625, 'epoch': 0.92}
+ 92%|█████████▏| 46/50 [17:31<01:15, 18.79s/it][DEBUG] total_input_ids.shape: torch.Size([2, 700])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [68, 223]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [84, 677]}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1299])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1384])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1384])
+format error--------------------------------------------------
+<summary>
+- 打开"京东"应用程序。
+</summary>
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [172, 800]}}
+</tool_call> None True
+--------------------------------------------------
+ 94%|█████████▍| 47/50 [17:45<00:52, 17.49s/it]                                               {'loss': -0.0788, 'grad_norm': 13.241760094808475, 'learning_rate': 8e-08, 'completion_length': 53.75, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.125, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.375, 'reward_std': 0.5303300768136978, 'kl': 0.0032806396484375, 'epoch': 0.94}
+ 94%|█████████▍| 47/50 [17:45<00:52, 17.49s/it][DEBUG] total_input_ids.shape: torch.Size([2, 1346])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1432])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1432])
+[DEBUG] total_input_ids.shape: torch.Size([2, 700])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+[DEBUG] total_input_ids.shape: torch.Size([2, 742])
+Exception--------------------------------------------------
+Expecting value: line 1 column 1 (char 0)
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [255, 592]}}
+要打开淘宝，我需要从手机主屏幕中找到淘宝应用。淘宝应用图标在屏幕中央偏上的位置。
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use",
+  "arguments": {
+    "coordinate": [35, 24], "action": "click"}
+}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+要打开淘宝，我需要从手机主屏幕中找到淘宝应用。淘宝应用图标在屏幕中央偏上的位置。 None True
+--------------------------------------------------
+ 96%|█████████▌| 48/50 [18:00<00:33, 16.65s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 6e-08, 'completion_length': 57.25, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.012054443359375, 'epoch': 0.96}
+ 96%|█████████▌| 48/50 [18:00<00:33, 16.65s/it][DEBUG] total_input_ids.shape: torch.Size([2, 700])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+[DEBUG] total_input_ids.shape: torch.Size([2, 738])
+Exception--------------------------------------------------
+'arguments'
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [58, 204]}}
+{
+  "name": "mobile_use"
+}
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"action": "click", "coordinate": [68, 166]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{
+  "name": "mobile_use"
+}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1301])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1397])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1397])
+ 98%|█████████▊| 49/50 [18:16<00:16, 16.44s/it]                                               {'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 4e-08, 'completion_length': 59.25, 'rewards/accuracy_reward': 0.0, 'rewards_zero_ratio/accuracy_reward': 1.0, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.25, 'reward_std': 0.0, 'kl': 0.02685546875, 'epoch': 0.98}
+ 98%|█████████▊| 49/50 [18:16<00:16, 16.44s/it][DEBUG] total_input_ids.shape: torch.Size([2, 694])
+[DEBUG] total_input_ids.shape: torch.Size([2, 733])
+[DEBUG] total_input_ids.shape: torch.Size([2, 733])
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {"function": "click", "coordinate": [151, 219]}}
+</tool_call> None True
+--------------------------------------------------
+format error--------------------------------------------------
+<tool_call>
+{"name": "mobile_use", "arguments": {}}
+</tool_call> None True
+--------------------------------------------------
+[DEBUG] total_input_ids.shape: torch.Size([2, 1333])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1446])
+[DEBUG] total_input_ids.shape: torch.Size([2, 1446])
+100%|██████████| 50/50 [18:32<00:00, 16.33s/it]                                               {'loss': 0.0979, 'grad_norm': 7.580356658823564, 'learning_rate': 2e-08, 'completion_length': 59.25, 'rewards/accuracy_reward': 0.25, 'rewards_zero_ratio/accuracy_reward': 0.5, 'rewards_one_ratio/accuracy_reward': 0.0, 'rewards/format_reward': 0.25, 'rewards_zero_ratio/format_reward': 0.5, 'rewards_one_ratio/format_reward': 0.0, 'reward': 0.5, 'reward_std': 0.3535533845424652, 'kl': 0.00396728515625, 'epoch': 1.0}
+100%|██████████| 50/50 [18:32<00:00, 16.33s/it]                                               {'train_runtime': 1137.6952, 'train_samples_per_second': 0.088, 'train_steps_per_second': 0.044, 'train_loss': -0.022640471570193766, 'epoch': 1.0}
+100%|██████████| 50/50 [18:57<00:00, 16.33s/it]100%|██████████| 50/50 [18:57<00:00, 22.75s/it]
