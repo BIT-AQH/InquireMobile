@@ -30,10 +30,6 @@
   <script src="./static/js/question_card.js"></script>
 
   <script src="./static/js/leaderboard_testmini.js"></script>  
-  <script src="./data/results/output_folders.js" defer></script>
-  <script src="./data/results/model_scores.js" defer></script>
-
-  <script src="./visualizer/data/data_public.js" defer></script>
 
   <script type="text/javascript" src="./static/js/echarts.min.js"></script>
   <script src="./static/js/circle.js"></script>
@@ -174,11 +170,17 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     updateRowNumbers();
-    document.querySelector("#results").addEventListener("click", updateRowNumbers);
+    const resultsTable = document.querySelector("#results");
+    if (resultsTable) {
+      resultsTable.addEventListener("click", updateRowNumbers);
+    }
   });
 
   function updateRowNumbers() {
     const rows = document.querySelectorAll("#results tbody tr");
+    if (!rows.length) {
+      return;
+    }
     rows.forEach((row, index) => {
       row.querySelector("td").innerText = index + 1;
     });
