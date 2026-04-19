@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> InquireMobile </title>
+
+  <!-- <link rel="icon" href="./static/images/video-mme.png"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+  <link rel="stylesheet" href="./static/css/video-player.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>  
+  <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script>
+
+  <script type="text/javascript" src="./static/js/echarts.min.js"></script>
+  <script src="./static/js/circle.js"></script>
+
+  <style>
+    .no-sort {
+        cursor: default;
+        pointer-events: none;
+        background-image: none !important; /* Remove the sort arrow */
+    }
+    thead th {
+        /* background-color: #f2f2f2; First level header background */
+        background-color: #c30f0f;
+    }
+    .header-level-2 {
+        background-color: #e6f7ff; /* Second level header background */
+    }
+    .header-level-3 {
+        background-color: #d9f2d9; /* Third level header background */
+    }
+    .header-level-4 {
+        background-color: #ffcce0; /* Fourth level header background */
+    }
+  </style>
+
+</head>
+<body>
+
+  
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
+        <a class="navbar-link">
+          More Research
+        </a>
+      </div> -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <!-- <img src="static/images/video-mme.png" style="width:1.6em;vertical-align: middle" alt="Logo"/> -->
+            <span class="InquireMobile" style="vertical-align: middle">InquireMobile</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle", style="margin-bottom: 20px;">
+              Teaching VLM-based Mobile Agent to Request Human Assistance via Reinforcement Fine-Tuning
+          </h2>
+          
+
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block"><sup style="color:#6fbf73;">1</sup>USTC,</span>
+            <span class="author-block"><sup style="color:#ed4b82">2</sup>XMU,</span>
+            <span class="author-block"><sup style="color:#9400D3">3</sup>HKU,</span>
+            <span class="author-block"><sup style="color:#ffac33">4</sup>PKU,</span>
+            <span class="author-block"><sup style="color:#18acfb">5</sup>CUHK,</span>
+            <span class="author-block"><sup style="color:#33ffd6">6</sup>ECNU</span><br> -->
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2508.19679"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/BIT-AQH/InquireMobile"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/PG23/InquireMobile"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">📊</p>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Introduction -->
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Recent advances in Vision-Language Models (VLMs) have enabled mobile agents to perceive and interact with real-world mobile environments based on human instructions. However, the current fully autonomous paradigm poses potential safety risks when model understanding or reasoning capabilities are insufficient. To address this challenge, we first introduce InquireBench, a comprehensive benchmark specifically designed to evaluate mobile agents' capabilities in safe interaction and proactive inquiry with users, encompassing 5 categories and 22 sub-categories, where most existing VLM-based agents demonstrate near-zero performance. In this paper, we aim to develop an interactive system that actively seeks human confirmation at critical decision points. To achieve this, we propose InquireMobile, a novel model inspired by reinforcement learning, featuring a two-stage training strategy and an interactive pre-action reasoning mechanism. Finally, our model achieves an 46.8\% improvement in inquiry success rate and the best overall success rate among existing baselines on InquireBench. We will open-source all datasets, models, and evaluation codes to facilitate development in both academia and industry.  
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    updateRowNumbers();
+    document.querySelector("#results").addEventListener("click", updateRowNumbers);
+  });
+
+  function updateRowNumbers() {
+    const rows = document.querySelectorAll("#results tbody tr");
+    rows.forEach((row, index) => {
+      row.querySelector("td").innerText = index + 1;
+    });
+  }
+</script>
+
+
+<!-- Introduction -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h2 class="title is-1 mathvista_other">
+    <span class="mathvista_other" style="vertical-align: middle">Why InquireMobile?</span>
+  </h2>
+    <div>
+    <img src="./static/imgs/intro.pdf" alt="grade-lv" style="width: 70%;"/>
+    <p>An example of a high-stakes scenario involving irreversible file deletion, which requires human confirmation before execution. In fact, situations requiring human assistance are widespread.</p>
+    </div>
+  </div>
+</section>
+            
+<section class="section">
+<div class="container">
+
+
+<!-- Benchmark -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h2 class="title is-1 mathvista_other">
+    <span class="mathvista_other" style="vertical-align: middle">InquireBench</span>
+  </h2>
+    <div>
+    <img src="./static/imgs/benchmark_stat.pdf" alt="grade-lv" style="width: 70%;"/>
+    <p>Distribution of our InquireBench dataset. The top three frequent apps are listed for each category.</p>
+    </div>
+  </div>
+</section>
+            
+<section class="section">
+<div class="container">
+
+
+<!-- Construction Pipeline -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h2 class="title is-1 mathvista_other">
+    <span class="mathvista_other" style="vertical-align: middle">InquireBench</span>
+  </h2>
+    <div>
+    <img src="./static/imgs/dataset.pdf" alt="grade-lv" style="width: 70%;"/>
+    <p>Data Collection Pipeline of our InquireBench. Among them, we employ a random walk approach to trigger the potential inquiry scenario, in which the agent seek human assistance.</p>
+    </div>
+  </div>
+</section>
+            
+<section class="section">
+<div class="container">
+
+
+    <!-- Training Framework -->
+  <div class="columns is-centered">
+    <div class="column has-text-centered">
+      <h2 class="title is-3">Training Pipeline</h2>
+      <div class="box m-5">
+        <div class="content has-text-centered">
+          <img src="./static/imgs/method.pdf" alt="grade-lv" style="max-width: 70%;"/>
+          <p>Our traixning framework consists of two stages:</p>
+        </div>
+        <div class="content has-text-justified">
+          <h4>Stage 1: Cold Start using SFT</h4>
+          <p>Format finetuning by supervised fine-tuning (SFT).</p>
+          
+          <h4>Stage 2: RL using GRPO</h4>
+          <p>Inquiry enhancement via GRPO training with verifiable rewards, to improve the agent's interactive capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div> 
+</section>
+<section class="section">
+  <div class="container">
+
+
+
+
+    <!-- Results -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-3">Main Results</h2>
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="./static/imgs/exp_main.png" alt="grade-lv" style="max-width: 70%;"/>
+            <p>Main results on InquireBench. ISR denotes the inquiry success rate and SR denotes the task success rate.
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Case Study -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-3">Case Study</h2>
+        <div class="box m-5">
+          <div class="content has-text-centered"></div>
+          <img src="./static/imgs/case.pdf" alt="grade-lv" style="max-width: 70%;" />
+          <p>Comparison of InquireMobile and Qwen2.5-VL-3B-Instruct</p>
+    
+          <div class="content has-text-justified">
+            <ul>
+              <p>Task: "One of my socks is torn"</p>
+                <li>Qwen2.5-VL-3B-Instruct: Failed at the second step.</li>
+                <li>InquireMobile : Successfully inquired and then completed the whole task.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div> 
+</section>
+
+<!-- RESULTS SECTION -->
+
+
+
+<section class="section">
+  <div class="container" style="width: 60%;">
+  <style>
+      pre {
+        background-color: #f4f4f4;
+        padding: 5px; /* 调整padding为5px */
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow-x: auto; /* 允许水平滚动 */
+    }
+    code {
+        font-family: Consolas, "Courier New", monospace;
+        color: #d63384; /* 代码文本颜色 */
+    }
+  </style>
+
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p style="text-align: center;">
+          This website is licensed under a <a rel="license"
+                                              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
