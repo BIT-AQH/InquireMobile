@@ -39,7 +39,7 @@ privacy-related decisions).
 .
 ├── InquireMobile/            # main code for the InquireMobile agent
 │   ├── annotation/           # data annotation scripts (GPT-4o / Gemini)
-│   ├── data/                 # training & evaluation datasets (.jsonl)
+│   ├── data/                 # -> hosted on Hugging Face (see below)
 │   ├── result/               # evaluation results
 │   ├── prompt/train.txt      # the agent system prompt / action schema
 │   ├── eval.py / eval.bash   # model rollout + GPT-4o judge
