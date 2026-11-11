@@ -25,15 +25,20 @@ The download restores the original layout under `data/`:
 
 ```
 data/
-├── tasks_en.jsonl            # InquireBench evaluation tasks (en/zh)
-├── tasks_zh.jsonl
-├── tasks_en_huawei.jsonl     # ... device / simulator subsets
-├── interactive_sft.jsonl     # SFT training trajectories
-├── interactive_grpo_*.jsonl  # GRPO / RLVR training trajectories
-├── general_grpo_3k.jsonl     # general GRPO training data
-├── sft_general.jsonl         # SFT data
-├── itag_agent_trajectory_0528_rl_v2.jsonl
-└── ...
+├── tasks_en.jsonl            # InquireBench evaluation tasks (en)
+├── tasks_zh.jsonl            # InquireBench evaluation tasks (zh)
+├── tasks_en_extended.jsonl   # extended English task set
+├── tasks_{en,zh}_huawei.jsonl   # Huawei-device subsets
+├── tasks_{en,zh}_simulator.jsonl  # simulator subsets
+├── tasks_zh_huawei_7.jsonl   # Huawei-device subset (7 tasks)
+├── interactive_sft.jsonl     # stage-1 SFT trajectories
+├── interactive_grpo_401408.jsonl  # stage-2 GRPO / RLVR trajectories
+├── general_grpo_5k.jsonl     # general GRPO training data
+├── sft_general.jsonl         # SFT data (general)
+├── sft_pos.jsonl             # SFT data (positive)
+├── instructions.jsonl        # raw instruction pool
+├── interactive_added.jsonl   # added interaction samples
+└── case_study.jsonl          # case-study examples
 ```
 
 See the dataset card on Hugging Face for the full file list and field schemas.
