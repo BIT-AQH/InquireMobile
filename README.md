@@ -45,7 +45,7 @@ privacy-related decisions).
 │   ├── eval.py / eval.bash   # model rollout + GPT-4o judge
 │   └── ...
 ├── R1-V/                     # R1-V fork: RLVR (GRPO) training code
-│   └── src/r1-v/src/open_r1/ # grpo_interactive.py, grpo_operator_ai_v2.py, ...
+│   └── src/r1-v/src/open_r1/ # grpo_interactive.py, sft.py, ...
 ├── eval/                     # device/emulator + OSS collector
 │   └── gui_agent_watching_draw_bbox.py
 ├── docs/eval.md              # evaluation walkthrough
@@ -81,7 +81,7 @@ bash run_interactive.sh   # GRPO with the interactive (call_user) reward
 ```
 
 See the `run*.sh` scripts and the `grpo_*` scripts under `src/open_r1/` for the
-available variants (GUI-agent, interactive, operator-AI).
+available variants (interactive, GUI-agent).
 
 ## Evaluation
 
