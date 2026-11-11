@@ -108,10 +108,12 @@ license (CC BY 4.0).
 ```bibtex
 @inproceedings{inquirermobile2026,
   title     = {InquireMobile},
-  author    = {},
+  author    = {Qihang Ai and Pi Bu and Yue Cao and Yingyao Wang and Jihao Gu and
+               Jingxuan Xing and Zekun Zhu and Wei Jiang and Zhicheng Zheng and
+               Jun Song and Yuning Jiang},
   booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2026)},
   year      = {2026}
 }
 ```
 
-> *(TODO: fill in the full author list, title, and page numbers.)*
+> *(TODO: fill in the final paper title and page numbers.)*
