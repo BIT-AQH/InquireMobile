@@ -15,11 +15,26 @@ from PIL import Image, ImageDraw, ImageFont
 
 warnings.filterwarnings("ignore")
 
-oss_name = 'alimama-creative-public'
-# oss_name = 'lab-mllm'
-oss_auth = oss2.Auth(OSS_BUCKETS[oss_name]['accessKeyID'], OSS_BUCKETS[oss_name]['accessKeySecret'])
-oss_bucket = oss2.Bucket(oss_auth, OSS_BUCKETS[oss_name]['endpoint'], oss_name)
-print(f"oss_bucket is {oss_bucket}")    
+# OSS credentials are read from environment variables:
+#   OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET, OSS_ENDPOINT, OSS_BUCKET_NAME
+OSS_NAME = os.environ.get("OSS_BUCKET_NAME", "alimama-creative-public")
+OSS_BUCKETS = {}
+if os.environ.get("OSS_ACCESS_KEY_ID"):
+    OSS_BUCKETS[OSS_NAME] = {
+        "accessKeyID": os.environ["OSS_ACCESS_KEY_ID"],
+        "accessKeySecret": os.environ.get("OSS_ACCESS_KEY_SECRET", ""),
+        "endpoint": os.environ.get("OSS_ENDPOINT", "oss-cn-beijing.aliyuncs.com"),
+    }
+    oss_auth = oss2.Auth(OSS_BUCKETS[OSS_NAME]["accessKeyID"], OSS_BUCKETS[OSS_NAME]["accessKeySecret"])
+    oss_bucket = oss2.Bucket(oss_auth, OSS_BUCKETS[OSS_NAME]["endpoint"], OSS_NAME)
+else:
+    oss_auth = None
+    oss_bucket = None
+    print("[Warning] OSS_ACCESS_KEY_ID not set; OSS upload functions are disabled.")
+
+# Local directories for captured screenshots / bounding-box images (overridable via CLI).
+PC_IMAGE_BASE = '/Users/USERNAME/code/GUIAgent/images/huawei'
+PC_BBOX_BASE = '/Users/USERNAME/code/GUIAgent/images/huawei_bbox'
 
 def convert_text_to_pinyin(text):
     """
@@ -217,7 +232,7 @@ def execute_mobile_action(action_json, device_serial='emulator-5554'):
         
         elif action == 'click':
             x, y = action_json.get('coordinate', [0, 0])
-            cmd = f'{base_cmd} shell input tap {x*scatter} {y*scatter}'
+            cmd = f'{base_cmd} shell input tap {int(x*scatter)} {int(y*scatter)}'
         
         elif action == 'long_press':
             x, y = action_json.get('coordinate', [0, 0])
@@ -315,6 +330,93 @@ def clear_tasks(device_serial="emulator-5554", times=5, delay=0.3):
         subprocess.run(swipe_command)
         time.sleep(delay)
 
+# def execute_mobile_action(action_json, device_serial='emulator-5554'):
+
+#     """
+#     将 JSON 格式的 mobile_use action 转换为 ADB 命令并执行
+    
+#     :param action_json: JSON 格式的 action 字典
+#     :param device_serial: ADB 设备序列号，默认为 emulator-5554
+#     :return: 执行结果 True/False
+#     """
+#     try:
+#         # 解析 JSON（如果传入的是字符串）
+#         if isinstance(action_json, str):
+#             action_json = json.loads(action_json)
+        
+#         action = action_json.get('action')
+        
+#         # 构建基础 ADB 命令前缀
+#         base_cmd = f'adb -s {device_serial}'
+#         scatter=4
+#         # 根据不同 action 构建不同的命令
+#         if action == 'key':
+#             # 按键事件
+#             cmd = f'{base_cmd} shell input keyevent {action_json.get("text", "")}'
+        
+#         elif action == 'click':
+#             x, y = action_json.get('coordinate', [0, 0])
+#             cmd = f'{base_cmd} shell input tap {x*scatter} {y*scatter}'
+        
+#         elif action == 'long_press':
+#             x, y = action_json.get('coordinate', [0, 0])
+#             duration = action_json.get('time', 1)
+#             cmd = f'{base_cmd} shell input swipe {x*scatter} {y*scatter} {x*scatter} {y*scatter} {int(duration * 1000)}'
+        
+#         elif action == 'swipe':
+#             x1, y1 = action_json.get('coordinate', [0, 0])
+#             x2, y2 = action_json.get('coordinate2', [0, 0])
+#             cmd = f'{base_cmd} shell input swipe {x1*scatter} {y1*scatter} {x2*scatter} {y2*scatter}'
+        
+#         elif action == 'type':
+#             text = action_json.get('text', '')
+#             escaped_text = text.replace(' ', '\\ ')
+#             cmd = f'{base_cmd} shell input text "{escaped_text}"'
+        
+#         elif action == 'system_button':
+#             button_map = {
+#                 'Back': '4',
+#                 'Home': '3',
+#                 'Menu': '82',
+#                 'Enter': '66'
+#             }
+#             button = action_json.get('button', 'Home')
+#             key_code = button_map.get(button, '3')
+#             cmd = f'{base_cmd} shell input keyevent {key_code}'
+        
+#         elif action == 'open':
+#             app = action_json.get('text', '')
+#             cmd = f'{base_cmd} shell monkey -p {app} -c android.intent.category.LAUNCHER 1'
+        
+#         elif action == 'wait':
+#             wait_time = action_json.get('time', 1)
+#             import time
+#             time.sleep(wait_time)
+#             return True
+        
+#         elif action == 'terminate':
+#             status = action_json.get('status', 'success')
+#             print(f"[{device_serial}] Task terminated with status: {status}")
+#             return status == 'success'
+        
+#         else:
+#             print(f"[{device_serial}] Unsupported action: {action}")
+#             return False
+        
+#         result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        
+#         if result.returncode == 0:
+#             print(f"[{device_serial}] Action '{action}' executed successfully")
+#             return True
+#         else:
+#             print(f"[{device_serial}] Action '{action}' failed. Error: {result.stderr}")
+#             return False
+    
+#     except Exception as e:
+#         print(f"[{device_serial}] Error executing mobile action: {e}")
+#         return False
+    
+
 def draw_bbox_on_screenshot(pc_image_path, pc_image_bbox_path, action_json):
     """
     在截图上画框，根据不同action类型进行操作，然后保存到pc_image_bbox_path
@@ -341,6 +443,7 @@ def draw_bbox_on_screenshot(pc_image_path, pc_image_bbox_path, action_json):
             font = ImageFont.load_default(size=50)  # 默认字体
         
         scatter = 1/0.3 # fix
+        # scatter = 3 # fix
 
         # 根据不同 action 构建不同的命令
         if action == 'key':
@@ -430,7 +533,7 @@ def watch_and_execute_oss_action(
     capture_and_pull_screenshot(mobile_image_path, pc_image_path, device_serial)
     if not os.path.exists(pc_image_path):
         print(f'{pc_image_path} does not exits')
-        pc_image_path = '/Users/USERNAME/code/GUIAgent/images/homescreen/homescreen.png'
+        pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
     local2oss(pc_image_path, oss_image_path)
 
     while True:
@@ -477,16 +580,12 @@ def watch_and_execute_oss_action(
                     time.sleep(1.8)
                 capture_and_pull_screenshot(mobile_image_path, pc_image_path, device_serial)
                 temp=0
-                # while not os.path.exists(pc_image_path):
-                #     temp+=1
-                #     print(f'{pc_image_path} does not exits')
-                #     if step_id-temp < 0:
-                #         pc_image_path = '/Users/USERNAME/code/GUIAgent/images/homescreen/homescreen.png'
-                #     pc_image_path = os.path.join(pc_image_folder, f"step_{step_id-temp}.png")
-                if not os.path.exists(pc_image_path):
-                    # temp+=1
-                    print(f'{pc_image_path} does not exits, use local homescreen')
-                    pc_image_path = '/Users/USERNAME/code/GUIAgent/images/homescreen/homescreen.png'
+                while not os.path.exists(pc_image_path):
+                    temp+=1
+                    print(f'{pc_image_path} does not exits')
+                    if step_id-temp < 0:
+                        pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
+                    pc_image_path = os.path.join(pc_image_folder, f"step_{step_id-temp}.png")
                 local2oss(pc_image_path, oss_image_path)
                 print(f"[{device_serial}] Screenshot saved as {image_name}")
 
@@ -507,7 +606,7 @@ def watch_and_execute_oss_action(
                 temp+=1
                 print(f'{pc_image_path} does not exits')
                 if step_id-temp < 0:
-                    pc_image_path = '/Users/USERNAME/code/GUIAgent/images/homescreen/homescreen.png'
+                    pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
                 pc_image_path = os.path.join(pc_image_folder, f"step_{step_id-temp}.png")
                 pc_image_bbox_path = os.path.join(pc_image_bbox_folder, f"step_{step_id-temp}.png")
             local2oss(pc_image_path, oss_image_path)
@@ -593,7 +692,7 @@ def continuous_watch_oss_actions(
             time.sleep(5)
 
  
-def process_device(training_step: int, device: str, cuda2virtualenv: Dict[str, str], oss_config: dict, task_name: str, sample_num: int, max_steps: int):
+def process_device(training_step: int, device: str, cuda2virtualenv: Dict[str, str], oss_config: dict, task_name: str, sample_num: int, max_steps: int, image_base: str, bbox_base: str):
     try:
         serial_number = cuda2virtualenv[device]
         sample_num = sample_num # 需要按照实际运行时 num_generations 修改？
@@ -607,15 +706,15 @@ def process_device(training_step: int, device: str, cuda2virtualenv: Dict[str, s
                 print(f"Device {device}, Sample {sample_id} is running...")
                 oss_image_folder = os.path.join(oss_image_folder_all, f'sample_{sample_id}/')
                 oss_text_folder = os.path.join(oss_text_folder_all, f'sample_{sample_id}/')
-                pc_image_folder = os.path.join('/Users/USERNAME/code/GUIAgent/images/emulator', task_name, device, f'step{training_step}', f'sample{sample_id}/')
-                pc_image_bbox_folder = os.path.join('/Users/USERNAME/code/GUIAgent/images/emulator_bbox', task_name, device, f'step{training_step}', f'sample{sample_id}/')
+                pc_image_folder = os.path.join(image_base, task_name, device, f'step{training_step}', f'sample{sample_id}/')
+                pc_image_bbox_folder = os.path.join(bbox_base, task_name, device, f'step{training_step}', f'sample{sample_id}/')
 
                 os.makedirs(pc_image_folder, exist_ok=True)
                 os.makedirs(pc_image_bbox_folder, exist_ok=True)
                 # print(f"Created/verified folder: {pc_image_folder}")
                 print(oss_text_folder)
                 continuous_watch_oss_actions(
-                    oss_name='alimama-creative-public',
+                    oss_name=OSS_NAME,
                     oss_image_folder=oss_image_folder,
                     oss_text_folder=oss_text_folder,
                     pc_image_folder=pc_image_folder,
@@ -632,15 +731,15 @@ def process_device(training_step: int, device: str, cuda2virtualenv: Dict[str, s
         print(f"Error in process_device for device {device}: {e}")
         raise
 
-def grpo_sample(training_step: int, cuda_devices: List[str], cuda2virtualenv: Dict[str, str], task_name: str, sample_num: int, max_steps: int):
-    oss_config = OSS_BUCKETS['alimama-creative-public']
+def grpo_sample(training_step: int, cuda_devices: List[str], cuda2virtualenv: Dict[str, str], task_name: str, sample_num: int, max_steps: int, image_base: str, bbox_base: str):
+    oss_config = OSS_BUCKETS[OSS_NAME]
     processes = []
 
     try:
         for device in cuda_devices:
             p = multiprocessing.Process(
                 target=process_device,
-                args=(training_step, device, cuda2virtualenv, oss_config, task_name, sample_num, max_steps)
+                args=(training_step, device, cuda2virtualenv, oss_config, task_name, sample_num, max_steps, image_base, bbox_base)
             )
             processes.append(p)
             p.start()
@@ -665,8 +764,23 @@ def grpo_sample(training_step: int, cuda_devices: List[str], cuda2virtualenv: Di
 
 
 if __name__ == '__main__':
-    # train
-    # cuda_devices = ["device0","device1"] # ,"device2"
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Watch OSS for new actions and drive an Android device/emulator to collect screenshots.")
+    parser.add_argument("--task_name", type=str, required=True, help="Task/experiment name.")
+    parser.add_argument("--devices", type=str, nargs="+", default=["huawei"],
+                        help="Logical device names from the cuda2virtualenv map (e.g. huawei device0 device1).")
+    parser.add_argument("--training_step", type=int, default=42, help="Starting instruction index (incremented before first run).")
+    parser.add_argument("--sample_num", type=int, default=1, help="Number of samples per instruction.")
+    parser.add_argument("--max_steps", type=int, default=15, help="Maximum rollout steps.")
+    parser.add_argument("--image_base", type=str, default=PC_IMAGE_BASE, help="Local screenshot directory base.")
+    parser.add_argument("--bbox_base", type=str, default=PC_BBOX_BASE, help="Local bbox-image directory base.")
+    parser.add_argument("--serial", type=str, default=None, help="Override the ADB serial for all selected devices.")
+    parser.add_argument("--loop", action="store_true",
+                        help="Keep incrementing training_step and rerun until interrupted.")
+    args = parser.parse_args()
+
     cuda2virtualenv = {
         "device_test": "emulator-5554",
         "device0": "emulator-5554",
@@ -679,17 +793,15 @@ if __name__ == '__main__':
         "device7": "emulator-5561",
         "huawei": "PQY0221129026710",
     }
-    # task_name = "Qwen2_5_VL_3B_Mobile_R1_v0"
-    # sample_num = 4
+    if args.serial:
+        for d in args.devices:
+            cuda2virtualenv[d] = args.serial
 
-    # eval
-    cuda_devices = ["device0"] # ,"device2"
-    max_steps = 15
-    task_name = "eval_inquire_stage1_simulator_en" # eval_mobile_r1_complex_inst
-    sample_num = 1
-
-    training_step = 14
+    training_step = args.training_step
     while True:
-        training_step+=1
-        grpo_sample(training_step, cuda_devices, cuda2virtualenv, task_name, sample_num, max_steps)
+        training_step += 1
+        grpo_sample(training_step, args.devices, cuda2virtualenv, args.task_name,
+                    args.sample_num, args.max_steps, args.image_base, args.bbox_base)
+        if not args.loop:
+            break
 
