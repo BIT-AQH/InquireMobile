@@ -29,8 +29,8 @@ cd eval
 # OSS credentials (required for upload)
 export OSS_ACCESS_KEY_ID="..."
 export OSS_ACCESS_KEY_SECRET="..."
-export OSS_ENDPOINT="oss-cn-beijing.aliyuncs.com"
-export OSS_BUCKET_NAME="alimama-creative-public"
+export OSS_ENDPOINT=""
+export OSS_BUCKET_NAME=""
 
 python gui_agent_watching_draw_bbox.py \
     --task_name eval_inquire_stage1_huawei_en \
@@ -67,7 +67,7 @@ cd InquireMobile
 
 # Judge credentials (or pass --api_key / --api_url)
 export OPENAI_API_KEY="..."            # or DASHSCOPE_API_KEY
-export OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
+export OPENAI_BASE_URL=""   # fill in your judge API base URL
 
 python eval.py \
     --model_path /path/to/Qwen2.5-VL-3B-Inquire-Stage1 \

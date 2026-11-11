@@ -19,7 +19,7 @@ Example
         --task_name eval_inquire_stage1 \
         --device huawei \
         --arch qwen2_5_vl \
-        --api_url https://dashscope.aliyuncs.com/compatible-mode/v1
+        --api_url <your-api-base-url>
 
 The judge API key/URL can also be supplied via the environment variables
 ``OPENAI_API_KEY`` (or ``DASHSCOPE_API_KEY``) and ``OPENAI_BASE_URL``.

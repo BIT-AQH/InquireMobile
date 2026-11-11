@@ -17,13 +17,13 @@ warnings.filterwarnings("ignore")
 
 # OSS credentials are read from environment variables:
 #   OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET, OSS_ENDPOINT, OSS_BUCKET_NAME
-OSS_NAME = os.environ.get("OSS_BUCKET_NAME", "alimama-creative-public")
+OSS_NAME = os.environ.get("OSS_BUCKET_NAME", "")
 OSS_BUCKETS = {}
 if os.environ.get("OSS_ACCESS_KEY_ID"):
     OSS_BUCKETS[OSS_NAME] = {
         "accessKeyID": os.environ["OSS_ACCESS_KEY_ID"],
         "accessKeySecret": os.environ.get("OSS_ACCESS_KEY_SECRET", ""),
-        "endpoint": os.environ.get("OSS_ENDPOINT", "oss-cn-beijing.aliyuncs.com"),
+        "endpoint": os.environ.get("OSS_ENDPOINT", ""),
     }
     oss_auth = oss2.Auth(OSS_BUCKETS[OSS_NAME]["accessKeyID"], OSS_BUCKETS[OSS_NAME]["accessKeySecret"])
     oss_bucket = oss2.Bucket(oss_auth, OSS_BUCKETS[OSS_NAME]["endpoint"], OSS_NAME)

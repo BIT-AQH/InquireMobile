@@ -71,7 +71,7 @@ def check_click_match(image_path, point1, point2, min_pixels=32*28*28, max_pixel
     
     client = OpenAI(
         api_key="YOUR_DASHSCOPE_API_KEY",
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+        base_url="",
     )
     
     completion = client.chat.completions.create(
@@ -139,7 +139,7 @@ def check_back_match(image_path, point, min_pixels=32*28*28, max_pixels=1280*28*
     
     client = OpenAI(
         api_key="YOUR_DASHSCOPE_API_KEY",
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+        base_url="",
     )
     
     completion = client.chat.completions.create(

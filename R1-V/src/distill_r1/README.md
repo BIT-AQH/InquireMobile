@@ -21,7 +21,7 @@ See `generate_scene_qa_pairs.ipynb` for details.
 
 ## R1 Response Generation
 
-`query_r1.py`: We get the predictions and obtain the reasoning trace of R1 by querying SilconFlow (You can register via https://cloud.siliconflow.cn/i/rYfeQZ6A so both we 20M token credit!)
+`query_r1.py`: We get the predictions and obtain the reasoning trace of R1 by querying SiliconFlow.
 
 Example Response:
 

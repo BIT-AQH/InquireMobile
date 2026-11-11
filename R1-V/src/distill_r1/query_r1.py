@@ -12,7 +12,7 @@ from prompt import R1_SYS_PROMPT
 # Initialize the client
 client = OpenAI(
     api_key=os.environ.get("SL_KEY", "YOUR_SILCONFLOW_KEY"),
-    base_url="https://api.siliconflow.cn/v1",
+    base_url="",
 )
 
 # Create a lock for thread-safe file writing
