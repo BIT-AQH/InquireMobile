@@ -85,6 +85,12 @@ See [data/README.md](data/README.md) for the file list and schemas, and
 
 ## Training
 
+<p align="center"><img src="assets/method.png" width="95%"></p>
+<p align="center"><em>Two-stage training: Stage&nbsp;1 cold-start SFT on interaction-annotated
+trajectories, then Stage&nbsp;2 GRPO with a rule-based action-level reward
+(format <code>R<sub>F</sub></code>, task <code>R<sub>T</sub></code>, BLEU-based
+inquiry <code>R<sub>A</sub></code>) against the golden next action.</em></p>
+
 InquireMobile is trained from Qwen2.5-VL-3B in two stages:
 
 1. **SFT** on the interaction-annotated trajectories
