@@ -14,8 +14,8 @@ Example
 
     python eval.py \
         --model_path /path/to/checkpoint \
-        --eval_dataset_path data/tasks_en_huawei.jsonl \
-        --eval_result_path result/eval_stage1.jsonl \
+        --eval_dataset_path data/data/tasks_en_huawei.jsonl \
+        --eval_result_path results/eval_stage1.jsonl \
         --task_name eval_inquire_stage1 \
         --device huawei \
         --arch qwen2_5_vl \
@@ -59,6 +59,7 @@ MODEL_CLASSES = {
 # Judge credentials are set once in ``main`` and read by ``get_model_response``.
 API_KEY = None
 API_URL = None
+JUDGE_MODEL = "gpt-4o-0806"
 
 
 # ==============================================================================
@@ -187,7 +188,7 @@ def get_model_response(image_paths: List[str], system_prompt: str, user_prompt: 
         try:
             client = OpenAI(api_key=API_KEY, base_url=API_URL)
             response = client.chat.completions.create(
-                model="gpt-4o-0806",
+                model=JUDGE_MODEL,
                 messages=messages,
                 response_format={"type": "json_object"},
                 temperature=0.1,
@@ -431,9 +432,10 @@ def perform_rollout(model, processor, input_, oss_image_folder_all, oss_text_fol
 # 5. Entry point
 # ==============================================================================
 def main(args):
-    global API_KEY, API_URL
+    global API_KEY, API_URL, JUDGE_MODEL
     API_KEY = args.api_key
-    API_URL = args.api_url
+    API_URL = args.api_url or None
+    JUDGE_MODEL = args.judge_model
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
@@ -455,7 +457,7 @@ def main(args):
     with open(args.eval_dataset_path, "r", encoding="utf-8") as f:
         eval_input = [json.loads(line) for line in f]
 
-    os.makedirs(os.path.dirname(args.eval_result_path), exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(args.eval_result_path)), exist_ok=True)
     if not os.path.exists(args.eval_result_path):
         open(args.eval_result_path, "w", encoding="utf-8").close()
 
@@ -518,8 +520,9 @@ if __name__ == "__main__":
                         help="Model architecture to load.")
     parser.add_argument("--device", type=str, default="huawei",
                         help="Device name used to locate pre-generated screenshots.")
-    parser.add_argument("--oss_base", type=str, default="/data/oss_bucket_0/USERNAME/gui_agent",
-                        help="Base directory holding 'images/' and 'instructions/'.")
+    parser.add_argument("--oss_base", type=str, default="./rollouts/gui_agent",
+                        help="Base directory holding 'images/' and 'instructions/' (the mounted OSS "
+                             "prefix shared with evaluation/device_runner.py).")
     parser.add_argument("--max_steps", type=int, default=15,
                         help="Maximum rollout steps per instruction.")
     parser.add_argument("--api_key", type=str,
@@ -528,5 +531,7 @@ if __name__ == "__main__":
     parser.add_argument("--api_url", type=str,
                         default=os.environ.get("OPENAI_BASE_URL"),
                         help="Base URL for the GPT-4o-compatible judge (env: OPENAI_BASE_URL).")
+    parser.add_argument("--judge_model", type=str, default=JUDGE_MODEL,
+                        help="Judge model name.")
     args = parser.parse_args()
     main(args)

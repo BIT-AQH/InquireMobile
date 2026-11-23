@@ -1,4 +1,22 @@
-import oss2
+"""Device-side rollout runner for InquireBench.
+
+Watches an OSS bucket for actions written by ``evaluation/eval.py`` (or by the
+GRPO trainer), executes them on an Android device / emulator through ADB and
+uploads the resulting screenshots back to OSS.
+
+Environment variables
+---------------------
+OSS_ACCESS_KEY_ID / OSS_ACCESS_KEY_SECRET / OSS_ENDPOINT / OSS_BUCKET_NAME
+    Credentials of the bucket shared with the model-side process.
+OSS_PREFIX
+    Key prefix inside the bucket (default: ``gui_agent``).
+ANDROID_SERIAL
+    ADB serial of the physical device registered under the name ``huawei``.
+FALLBACK_SCREENSHOT
+    Image uploaded when a screenshot cannot be captured
+    (default: ``<image_base>/home.png``).
+"""
+
 import time
 import json
 import warnings
@@ -33,8 +51,12 @@ else:
     print("[Warning] OSS_ACCESS_KEY_ID not set; OSS upload functions are disabled.")
 
 # Local directories for captured screenshots / bounding-box images (overridable via CLI).
-PC_IMAGE_BASE = '/Users/USERNAME/code/GUIAgent/images/huawei'
-PC_BBOX_BASE = '/Users/USERNAME/code/GUIAgent/images/huawei_bbox'
+PC_IMAGE_BASE = './rollouts/screenshots'
+PC_BBOX_BASE = './rollouts/screenshots_bbox'
+# Key prefix inside the OSS bucket; must match ``--oss_base`` on the model side.
+OSS_PREFIX = os.environ.get("OSS_PREFIX", "gui_agent").strip("/")
+# Screenshot used when capturing from the device fails.
+FALLBACK_SCREENSHOT = os.environ.get("FALLBACK_SCREENSHOT", os.path.join(PC_IMAGE_BASE, "home.png"))
 
 def convert_text_to_pinyin(text):
     """
@@ -533,7 +555,7 @@ def watch_and_execute_oss_action(
     capture_and_pull_screenshot(mobile_image_path, pc_image_path, device_serial)
     if not os.path.exists(pc_image_path):
         print(f'{pc_image_path} does not exits')
-        pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
+        pc_image_path = FALLBACK_SCREENSHOT
     local2oss(pc_image_path, oss_image_path)
 
     while True:
@@ -584,7 +606,7 @@ def watch_and_execute_oss_action(
                     temp+=1
                     print(f'{pc_image_path} does not exits')
                     if step_id-temp < 0:
-                        pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
+                        pc_image_path = FALLBACK_SCREENSHOT
                     pc_image_path = os.path.join(pc_image_folder, f"step_{step_id-temp}.png")
                 local2oss(pc_image_path, oss_image_path)
                 print(f"[{device_serial}] Screenshot saved as {image_name}")
@@ -606,7 +628,7 @@ def watch_and_execute_oss_action(
                 temp+=1
                 print(f'{pc_image_path} does not exits')
                 if step_id-temp < 0:
-                    pc_image_path = '/Users/USERNAME/code/GUIAgent/images/huawei/home.png'
+                    pc_image_path = FALLBACK_SCREENSHOT
                 pc_image_path = os.path.join(pc_image_folder, f"step_{step_id-temp}.png")
                 pc_image_bbox_path = os.path.join(pc_image_bbox_folder, f"step_{step_id-temp}.png")
             local2oss(pc_image_path, oss_image_path)
@@ -698,8 +720,8 @@ def process_device(training_step: int, device: str, cuda2virtualenv: Dict[str, s
         sample_num = sample_num # 需要按照实际运行时 num_generations 修改？
         max_steps = max_steps
 
-        oss_image_folder_all = f'USERNAME/gui_agent/images/{task_name}/{device}/instruction_{training_step}/'
-        oss_text_folder_all = f'USERNAME/gui_agent/instructions/{task_name}/{device}/instruction_{training_step}/'
+        oss_image_folder_all = f'{OSS_PREFIX}/images/{task_name}/{device}/instruction_{training_step}/'
+        oss_text_folder_all = f'{OSS_PREFIX}/instructions/{task_name}/{device}/instruction_{training_step}/'
 
         for sample_id in range(0, sample_num):
             try:
@@ -780,6 +802,10 @@ if __name__ == '__main__':
     parser.add_argument("--loop", action="store_true",
                         help="Keep incrementing training_step and rerun until interrupted.")
     args = parser.parse_args()
+    if "FALLBACK_SCREENSHOT" not in os.environ:
+        # Exported so that worker processes (fork or spawn) pick it up as well.
+        FALLBACK_SCREENSHOT = os.path.join(args.image_base, "home.png")
+        os.environ["FALLBACK_SCREENSHOT"] = FALLBACK_SCREENSHOT
 
     cuda2virtualenv = {
         "device_test": "emulator-5554",
@@ -791,7 +817,7 @@ if __name__ == '__main__':
         "device5": "emulator-5559",
         "device6": "emulator-5560",
         "device7": "emulator-5561",
-        "huawei": "PQY0221129026710",
+        "huawei": os.environ.get("ANDROID_SERIAL", "YOUR_DEVICE_SERIAL"),
     }
     if args.serial:
         for d in args.devices:

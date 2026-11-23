@@ -37,164 +37,186 @@ privacy-related decisions).
 
 ```
 .
-├── InquireMobile/            # main code for the InquireMobile agent
-│   ├── annotation/           # data annotation scripts (GPT-4o / Gemini)
-│   ├── data/                 # -> hosted on Hugging Face (see below)
-│   ├── result/               # evaluation results
-│   ├── prompt/train.txt      # the agent system prompt / action schema
-│   ├── eval.py / eval.bash   # model rollout + GPT-4o judge
-│   └── ...
-├── R1-V/                     # R1-V fork: RLVR (GRPO) training code
-│   └── src/r1-v/src/open_r1/ # grpo_interactive.py, sft.py, ...
-├── eval/                     # device/emulator + OSS collector
-│   ├── gui_agent_watching_draw_bbox.py
-│   └── kill_python.sh
-└── homepage/                 # project homepage
+├── annotation/               # data annotation pipeline (GPT-4o pre-labelling, inquiry generation, translation)
+├── data/                     # dataset download script (data is hosted on Hugging Face)
+├── prompts/                  # agent system prompt / action space
+├── R1-V/                     # training code: fork of R1-V (GRPO / RLVR for VLMs)
+│   └── src/r1-v/src/open_r1/
+│       ├── grpo_interactive.py   # GRPO with the interactive (call_user) reward
+│       ├── sft.py                # supervised fine-tuning
+│       └── trainer/              # GRPO trainers
+├── evaluation/
+│   ├── eval.py               # model rollout + GPT-4o judge
+│   ├── device_runner.py      # executes actions on an Android device / emulator (ADB)
+│   └── summarize_results.py  # SR / ISR / reward from result files
+├── scripts/                  # launch scripts (training / evaluation)
+├── results/                  # judge outputs of all models reported in the paper
+├── assets/                   # figures
+└── homepage/                 # project page
 ```
 
-## Getting started
+## Installation
 
-### Requirements
+```bash
+git clone https://github.com/BIT-AQH/InquireMobile.git
+cd InquireMobile
 
-- Python 3.10+
-- PyTorch with CUDA
-- `transformers`, `accelerate`, `deepspeed`, `vllm` (optional, for faster GRPO)
-- `oss2` (only for the optional OSS upload in the evaluation helpers)
+conda create -n inquiremobile python=3.11 -y
+conda activate inquiremobile
 
-### Model
+# training dependencies (R1-V, vLLM, flash-attn, pinned transformers)
+cd R1-V && bash setup.sh && cd ..
 
-InquireMobile is trained from a Qwen2.5-VL base. Training proceeds in two
-stages:
+# evaluation / annotation dependencies
+pip install -r requirements.txt
+```
 
-1. **SFT** on interaction-annotated trajectories.
-2. **GRPO / RLVR** using the scripts under `R1-V/`.
+## Data
 
-> Model checkpoints are released separately. *(TODO: add checkpoint links.)*
+Training data, the InquireBench tasks and all screenshots are hosted on
+Hugging Face: [PG23/InquireMobile](https://huggingface.co/datasets/PG23/InquireMobile).
+
+```bash
+bash data/download.sh              # -> data/InquireMobile/{data,images}
+```
+
+See [data/README.md](data/README.md) for the file list and schemas, and
+[LICENSE-DATA](LICENSE-DATA) for the data license (CC BY 4.0).
 
 ## Training
 
-Training is launched from `R1-V/src/r1-v/` using `torchrun`, e.g.:
+InquireMobile is trained from Qwen2.5-VL-3B in two stages:
+
+1. **SFT** on the interaction-annotated trajectories
+   (`data/InquireMobile/data/interactive_sft.jsonl`), with any standard
+   Qwen2.5-VL fine-tuning pipeline.
+2. **GRPO / RLVR** with the interactive (`call_user`) reward, implemented in
+   [`grpo_interactive.py`](R1-V/src/r1-v/src/open_r1/grpo_interactive.py):
 
 ```bash
-cd R1-V/src/r1-v
-bash run_interactive.sh   # GRPO with the interactive (call_user) reward
+# from the merged SFT checkpoint
+MODEL_NAME_OR_PATH=/path/to/sft/checkpoint-merge bash scripts/train_grpo_from_sft.sh
+
+# or from a stage-1 checkpoint
+MODEL_NAME_OR_PATH=/path/to/Qwen2.5-VL-3B-Inquire-Stage1 bash scripts/train_grpo_stage2.sh
 ```
 
-See the `run*.sh` scripts and the `grpo_*` scripts under `src/open_r1/` for the
-available variants (interactive, GUI-agent).
+Paths and the number of GPUs are controlled by environment variables
+(`DATA_ROOT`, `OUTPUT_DIR`, `NUM_GPUS`, …); see the header of each script.
+
+<p align="center"><img src="assets/reward_epoch_simple.png" width="60%"></p>
+
+> Model checkpoints are released separately. *(TODO: add checkpoint links.)*
 
 ## Evaluation
 
-The evaluation pipeline has two stages:
-
-1. **Environment rollout** — drive an Android device/emulator, feed the model
-   actions back into the environment, and collect screenshots + actions.
-2. **Model rollout + judging** — replay the agent against the collected
-   screenshots and score each trajectory with a GPT-4o-compatible judge.
+Evaluation on InquireBench is *online*: the agent operates a real Android
+device / emulator. It involves two processes that exchange screenshots and
+actions through a shared OSS bucket:
 
 ```
-┌─────────────────────────────┐      ┌──────────────────────────────┐
-│  eval/gui_agent_watching_   │      │  InquireMobile/eval.py       │
-│  draw_bbox.py               │ ───► │  rollout + GPT-4o judge      │
-│  (device + OSS collector)   │      │  -> result/*.jsonl           │
-└─────────────────────────────┘      └──────────────────────────────┘
+┌──────────────────────────────┐   actions   ┌──────────────────────────────┐
+│  evaluation/eval.py          │ ──────────► │  evaluation/device_runner.py │
+│  (GPU server)                │             │  (machine with ADB device)   │
+│  model rollout + GPT-4o judge│ ◄────────── │  executes actions, uploads   │
+│  -> results/*.jsonl          │ screenshots │  screenshots                 │
+└──────────────────────────────┘             └──────────────────────────────┘
 ```
 
-### 1. Environment rollout
+### 1. Device runner
 
-`eval/gui_agent_watching_draw_bbox.py` watches an OSS bucket for new actions
-and executes them on an ADB device/emulator, uploading screenshots back to OSS.
+`evaluation/device_runner.py` watches the bucket for new actions, executes
+them through ADB and uploads the resulting screenshots.
 
 ```bash
-cd eval
-
-# OSS credentials (required for upload)
 export OSS_ACCESS_KEY_ID="..."
 export OSS_ACCESS_KEY_SECRET="..."
-export OSS_ENDPOINT=""
-export OSS_BUCKET_NAME=""
+export OSS_ENDPOINT="..."
+export OSS_BUCKET_NAME="..."
+export OSS_PREFIX="gui_agent"           # key prefix inside the bucket
+export ANDROID_SERIAL="..."             # `adb devices`
 
-python gui_agent_watching_draw_bbox.py \
+python evaluation/device_runner.py \
     --task_name eval_inquire_stage1_huawei_en \
     --devices huawei \
-    --training_step 42 \
+    --training_step 0 \
     --sample_num 1 \
     --max_steps 15 \
-    --image_base /path/to/images/huawei \
-    --bbox_base /path/to/images/huawei_bbox
+    --loop
 ```
-
-Key arguments:
 
 | Argument | Description |
 |---|---|
-| `--task_name` | Task/experiment name; determines the OSS key prefix. |
+| `--task_name` | Experiment name; determines the OSS key prefix. |
 | `--devices` | Logical device names (`huawei`, `device0`, …) mapped to ADB serials in the script. |
+| `--serial` | Override the ADB serial of the selected devices. |
 | `--training_step` | Starting instruction index (incremented before the first run). |
 | `--sample_num` | Number of samples per instruction. |
 | `--max_steps` | Maximum rollout steps. |
-| `--image_base` / `--bbox_base` | Local directories for captured screenshots / bbox images. |
-| `--loop` | Keep incrementing `training_step` and rerun (for interactive data collection). |
-| `--serial` | Override the ADB serial for the selected devices. |
+| `--image_base` / `--bbox_base` | Local directories for captured screenshots / bbox visualisations. |
+| `--loop` | Keep moving on to the next instruction until interrupted. |
 
 ### 2. Model rollout + judging
 
-`InquireMobile/eval.py` loads a Qwen2.5-VL (or UI-TARS) checkpoint, produces a
-trajectory from the collected screenshots, and scores it with GPT-4o.
+`evaluation/eval.py` loads a Qwen2.5-VL (or UI-TARS) checkpoint, interacts with
+the device through the mounted bucket (`--oss_base`) and scores every
+trajectory with a GPT-4o-compatible judge.
 
 ```bash
-cd InquireMobile
+export OPENAI_API_KEY="..."
+export OPENAI_BASE_URL="..."            # your judge endpoint
 
-# Judge credentials (or pass --api_key / --api_url)
-export OPENAI_API_KEY="..."            # or DASHSCOPE_API_KEY
-export OPENAI_BASE_URL=""   # fill in your judge API base URL
-
-python eval.py \
+python evaluation/eval.py \
     --model_path /path/to/Qwen2.5-VL-3B-Inquire-Stage1 \
-    --eval_dataset_path data/tasks_en_huawei.jsonl \
-    --eval_result_path result/eval_stage1.jsonl \
+    --eval_dataset_path data/InquireMobile/data/tasks_en_huawei.jsonl \
+    --eval_result_path results/runs/eval_inquire_stage1_huawei_en.jsonl \
     --task_name eval_inquire_stage1_huawei_en \
     --device huawei \
     --arch qwen2_5_vl \
-    --oss_base /data/oss_bucket_0/USERNAME/gui_agent \
+    --oss_base /path/to/mounted/bucket/gui_agent \
     --max_steps 15
 ```
 
-Or use the convenience launcher [`eval.bash`](InquireMobile/eval.bash).
-
-Key arguments:
+or simply `MODEL_PATH=... OSS_BASE=... bash scripts/eval.sh`.
 
 | Argument | Description |
 |---|---|
 | `--model_path` | Model checkpoint (a PEFT adapter is merged automatically if present). |
 | `--eval_dataset_path` | JSONL of `{"instruction", "category", "intension"}` items. |
-| `--eval_result_path` | JSONL of per-sample judge results (`reason`, `reward`, `status`, `inquiry`). |
-| `--task_name` / `--device` | Locate the pre-generated screenshots under `--oss_base`. |
+| `--eval_result_path` | JSONL of per-task judge results (`reason`, `reward`, `status`, `inquiry`). |
+| `--task_name` / `--device` | Must match the device runner; locate the run under `--oss_base`. |
 | `--arch` | `qwen2_5_vl` (default) or `ui_tars` (Qwen2-VL). |
-| `--oss_base` | Base directory with `images/` and `instructions/`. |
-| `--max_steps` | Maximum rollout steps. |
-| `--api_key` / `--api_url` | Judge credentials (default from `OPENAI_API_KEY`/`DASHSCOPE_API_KEY` and `OPENAI_BASE_URL`). |
+| `--oss_base` | Local mount of `oss://<bucket>/<OSS_PREFIX>` holding `images/` and `instructions/`. |
+| `--api_key` / `--api_url` / `--judge_model` | Judge settings (default: `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `gpt-4o-0806`). |
 
 The result file is append-only: already-evaluated instructions are skipped on
-restart, so the run can be resumed safely.
+restart, so a run can be resumed safely.
 
-### Input data format
+### 3. Metrics
 
-The evaluation dataset is a JSONL file with one instruction per line:
-
-```json
-{"instruction": "Open WeChat and send a message ...", "category": "privacy", "intension": "..."}
+```bash
+python evaluation/summarize_results.py results/en/*.jsonl results/zh/*.jsonl
 ```
 
-- `instruction` — the user task.
-- `category` — task category (e.g. `privacy`, `intension`).
-- `intension` — the user's intent used after a `call_user` interaction.
+prints the task success rate (SR), the inquiry success rate (ISR) and the mean
+judge reward. The judge outputs for all models reported in the paper are
+provided in [`results/`](results/README.md).
 
-## Data
+## Data annotation
 
-Training and evaluation data are stored as JSONL files under `InquireMobile/data/`
-and `InquireMobile/annotation/`. See [LICENSE-DATA](LICENSE-DATA) for the data
-license (CC BY 4.0).
+The scripts in [`annotation/`](annotation/) reproduce the annotation pipeline
+(they expect `OPENAI_API_KEY` / `OPENAI_BASE_URL`):
+
+1. `judge_interaction.py` — GPT-4o pre-labels whether a screenshot/instruction
+   pair requires user interaction (later verified by human annotators);
+2. `generate_inquiry.py` — generates the reasoning and `call_user` content for
+   interactive samples;
+3. `translate.py` — translates the annotations into Chinese.
+
+## Acknowledgement
+
+The training code is built on [R1-V](https://github.com/Deep-Agent/R1-V)
+(Apache-2.0); see [`R1-V/README.md`](R1-V/README.md).
 
 ## License
 

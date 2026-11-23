@@ -1,0 +1,15 @@
+# Evaluation / annotation dependencies.
+# Training dependencies are installed by R1-V/setup.sh.
+torch
+transformers>=4.49.0
+accelerate
+peft
+qwen_vl_utils
+pillow
+tqdm
+openai>=1.0
+requests
+huggingface_hub
+# device runner (evaluation/device_runner.py)
+oss2
+pypinyin

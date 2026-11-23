@@ -86,6 +86,14 @@ class GRPOScriptArguments(ScriptArguments):
         default=3136,
         metadata={"help": "Minimum number of pixels for the image"},
     )
+    data_root: str = field(
+        default="data/InquireMobile",
+        metadata={"help": "Root of the downloaded InquireMobile dataset (contains `data/` and `images/`)."},
+    )
+    train_file: str = field(
+        default="data/interactive_grpo_401408.jsonl",
+        metadata={"help": "GRPO training file, absolute or relative to `data_root`."},
+    )
 
 
 def check_swipe_directon(x1, y1, x2, y2, width, height):
@@ -282,13 +290,18 @@ def main(script_args, training_args, model_args):
         "img_list": datasets.Sequence(datasets.Value("string")),
         "images": datasets.Sequence(datasets.Image())
     })
-    dataset_root = "/home/USERNAME/Appagent/data/"
-    
-    dataset = load_dataset("json", data_files=os.path.join(dataset_root, "interactive_grpo_401408.jsonl"), features=features)
+    dataset_root = script_args.data_root
+    train_file = script_args.train_file
+    if not os.path.isabs(train_file):
+        train_file = os.path.join(dataset_root, train_file)
+
+    dataset = load_dataset("json", data_files=train_file, features=features)
 
     def load_images(examples):
+        # `img_list` entries are relative to the dataset root (e.g. images/trajectory/xxx.png).
         examples["images"] = [
-            [Image.open(img_path) for img_path in sample_paths]
+            [Image.open(img_path if os.path.isabs(img_path) else os.path.join(dataset_root, img_path))
+             for img_path in sample_paths]
             for sample_paths in examples["img_list"]
         ]
         return examples

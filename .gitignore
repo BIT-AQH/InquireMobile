@@ -48,3 +48,11 @@ outputs/
 .vscode/
 .idea/
 *.swp
+
+# ---- Local data / runs ----
+data/InquireMobile/
+checkpoints/
+logs/
+rollouts/
+results/runs/
+annotation_data/
